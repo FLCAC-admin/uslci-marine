@@ -1,0 +1,54 @@
+﻿Ship Type,Subtype,Transit (kW),Maneuvering (kW),Hotelling (kW),Anchorage (kW)
+Bulk Carrier,Small,0,50,50,50
+Bulk Carrier,Handysize,0,50,50,50
+Bulk Carrier,Handymax,0,100,100,100
+Bulk Carrier,Panamax,0,200,200,200
+Bulk Carrier,Capesize,0,200,200,200
+Bulk Carrier,Capesize Largest,0,200,200,200
+Chemical Tanker,Smallest,0,125,125,125
+Chemical Tanker,Small,0,250,250,250
+Chemical Tanker,Handysize,0,250,250,250
+Chemical Tanker,Handymax,0,250,250,250
+Container Ship,"1,000 TEU",0,120,120,120
+Container Ship,"2,000 TEU",0,290,290,290
+Container Ship,"3,000 TEU",0,350,350,350
+Container Ship,"5,000 TEU",0,450,450,450
+Container Ship,"8,000 TEU",0,450,450,450
+Container Ship,"12,000 TEU",0,520,520,520
+Container Ship,"14,500 TEU",0,630,630,630
+Container Ship,Largest,0,700,700,700
+Cruise,"2,000 Ton",0,250,250,250
+Cruise,"10,000 Ton",0,250,250,250
+Cruise,"60,000 Ton",0,1000,1000,1000
+Cruise,"100,000 Ton",0,500,500,500
+Cruise,Largest,0,500,500,500
+Ferry/Passenger (C3),"2,000 Ton",0,0,0,0
+Ferry/Passenger (C3),Largest,0,0,0,0
+Ferry/Roll-on/Passenger (C3),"2,000 Ton",0,0,0,0
+Ferry/Roll-on/Passenger (C3),Largest,0,0,0,0
+Fishing (C3),All C3 Fishing,0,0,0,0
+General Cargo,"5,000 DWT",0,0,0,0
+General Cargo,"10,000 DWT",0,75,75,75
+General Cargo,Largest,0,100,100,100
+Liquified Gas Tanker,"50,000 DWT",100,200,1000,200
+Liquified Gas Tanker,"100,000 DWT",150,300,1500,300
+Liquified Gas Tanker,"200,000 DWT",300,600,3000,600
+Liquified Gas Tanker,Largest,300,600,3000,600
+Miscellaneous (C3),All C3 Misc.,0,0,0,0
+Offshore Support/Drillship,All Offshore Support/Drillship,0,0,0,0
+Oil Tanker,Smallest,0,100,500,100
+Oil Tanker,Small,0,150,750,150
+Oil Tanker,Handysize,0,250,1250,250
+Oil Tanker,Handymax,150,300,1500,300
+Oil Tanker,Panamax,150,300,1500,300
+Oil Tanker,Aframax,200,400,2000,400
+Oil Tanker,Suezmax,250,500,2500,500
+Oil Tanker,VLCC,300,600,3000,600
+Other Service,All Other Service,0,0,0,0
+Other Tanker,All Other Tanker,100,200,1000,200
+Reefer,All Reefer,0,270,270,270
+RORO,"5,000 Ton",0,200,200,200
+RORO,Largest,0,300,300,300
+Vehicle Carrier,"4,000 Vehicles",0,268,268,268
+Vehicle Carrier,Largest,0,268,268,268
+Yacht,C2/C3 Yacht,0,0,0,0

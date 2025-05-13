@@ -1,0 +1,17 @@
+﻿Ship Type,Mode of Transit Speed Ratios
+Bulk Carrier,0.76
+Chemical Tanker,0.81
+Container Ship,0.74
+Cruise,0.75
+Ferry/Passenger (C3),0.93
+Ferry/Roll-on/Passenger (C3),0.93
+Fishing (C3),0.74
+General Cargo,0.68
+Liquified Gas Tanker,0.81
+Miscellaneous (C3),0.74
+Offshore Support/Drillship,0.82
+Oil Tanker,0.83
+Other Tanker,0.78
+Reefer,0.8
+RORO,0.73
+Yacht (C2/C3),0.57

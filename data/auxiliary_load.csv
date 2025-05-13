@@ -1,0 +1,54 @@
+﻿Ship Type,Subtype,Transit (kW),Maneuvering (kW),Hotelling (kW),Anchorage (kW)
+Bulk Carrier,Small,190,310,280,190
+Bulk Carrier,Handysize,190,310,280,190
+Bulk Carrier,Handymax,260,420,370,260
+Bulk Carrier,Panamax,420,680,600,420
+Bulk Carrier,Capesize,420,680,600,420
+Bulk Carrier,Capesize Largest,420,680,600,420
+Chemical Tanker,Smallest,80,110,160,80
+Chemical Tanker,Small,230,330,490,230
+Chemical Tanker,Handysize,230,330,490,230
+Chemical Tanker,Handymax,550,780,1170,550
+Container Ship,"1,000 TEU",300,550,340,300
+Container Ship,"2,000 TEU",820,1320,600,820
+Container Ship,"3,000 TEU",1230,1800,700,1230
+Container Ship,"5,000 TEU",1390,2470,940,1390
+Container Ship,"8,000 TEU",1420,2600,970,1420
+Container Ship,"12,000 TEU",1630,2780,1000,1630
+Container Ship,"14,500 TEU",1960,3330,1200,1960
+Container Ship,Largest,2160,3670,1320,2160
+Cruise,"2,000 Ton",450,580,450,450
+Cruise,"10,000 Ton",450,580,450,450
+Cruise,"60,000 Ton",3500,5460,3500,3500
+Cruise,"100,000 Ton",11480,14900,11480,11480
+Cruise,Largest,11480,14900,11480,11480
+Ferry/Passenger (C3),"2,000 Ton",186,186,186,186
+Ferry/Passenger (C3),Largest,524,524,524,524
+Ferry/Roll-on/Passenger (C3),"2,000 Ton",105,105,105,105
+Ferry/Roll-on/Passenger (C3),Largest,710,710,710,710
+Fishing (C3),All C3 Fishing,200,200,200,200
+General Cargo,"5,000 DWT",60,90,120,60
+General Cargo,"10,000 DWT",170,250,330,170
+General Cargo,Largest,490,730,970,490
+Liquified Gas Tanker,"50,000 DWT",240,360,240,240
+Liquified Gas Tanker,"100,000 DWT",240,360,240,240
+Liquified Gas Tanker,"200,000 DWT",1710,2565,1710,1710
+Liquified Gas Tanker,Largest,1710,2565,1710,1710
+Miscellaneous (C3),All C3 Misc.,190,190,190,190
+Offshore Support/Drillship,All Offshore Support/Drillship,320,320,320,320
+Oil Tanker,Smallest,250,375,250,250
+Oil Tanker,Small,375,563,375,375
+Oil Tanker,Handysize,625,938,625,625
+Oil Tanker,Handymax,750,1125,750,750
+Oil Tanker,Panamax,750,1125,750,750
+Oil Tanker,Aframax,1000,1500,1000,1000
+Oil Tanker,Suezmax,1250,1875,1250,1250
+Oil Tanker,VLCC,1500,2250,1500,1500
+Other Service,All Other Service,220,220,220,220
+Other Tanker,All Other Tanker,500,750,500,500
+Reefer,All Reefer,1170,1150,1080,1170
+RORO,"5,000 Ton",600,1700,800,600
+RORO,Largest,950,2720,1200,950
+Vehicle Carrier,"4,000 Vehicles",500,1125,800,500
+Vehicle Carrier,Largest,500,1125,800,500
+Yacht,C2/C3 Yacht,130,130,130,130
