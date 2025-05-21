@@ -13,6 +13,8 @@ auth = True
 parent_path = Path(__file__).parent
 data_path =  parent_path / 'data'
 
+NM_to_KM = 1.852 # km per nautical mile
+
 #%% Prepare dataset of marine emissions
 
 with open(data_path / "marine_inputs.yaml", "r") as file:
@@ -177,17 +179,18 @@ df = (df
       .query('~(description == "nonECA" and Zone == "ECA")')
       .assign(EF_Unit = 'g / kWh')
       .assign(Energy = lambda x: x[[f'{c}_energy' for c in legs]].sum(axis=1))
-      .assign(FlowAmount = lambda x: x['EF'] * x['Energy'] / 1000)
+      .assign(FlowTotal = lambda x: x['EF'] * x['Energy'] / 1000)
       .assign(Unit = 'kg')
       .drop(columns=df.filter(regex='^.*?(energy).*?').columns)
-      .assign(tons = lambda x: x['FlowAmount'] * .00110231)
+      .assign(tons = lambda x: x['FlowTotal'] * .00110231)
       )
 
 
 ## Assign specific contexts based on the leg
 ## TODO: also consider locations?
 df = (df
-      .assign(Context = 'air')
+      .assign(Context = lambda x: x.apply(
+          lambda row: "/".join([row['Zone'], row['Leg']]), axis=1))
       )
 
 ## Drop unneccesary fields
@@ -212,10 +215,16 @@ mapped_df = apply_flow_mapping(
         'FlowableName': 'Pollutant',
         'FlowableUnit': 'Unit',
         'FlowableContext': 'Context',
-        'FlowableQuantity': 'FlowAmount',
+        'FlowableQuantity': 'FlowTotal',
         'UUID': 'FlowUUID'},
     **kwargs
     ).rename(columns={'Pollutant': 'FlowName'})
+
+#%% Convert to reference unit
+mapped_df = (mapped_df
+             .assign(FlowAmount = lambda x: x['FlowTotal'] /
+                     (x['AvgOfDistance (nm)'] * NM_to_KM * x['Capacity (metric tons)']))
+    )
 
 #%% Update the reference_flow_var for each process
 df_olca = pd.concat([mapped_df,
@@ -243,7 +252,7 @@ df_olca = (df_olca
            .assign(IsInput = np.where(cond2, True, False))
            .assign(FlowType = np.where(cond1 | cond2, 'PRODUCT_FLOW',
                    'ELEMENTARY_FLOW'))
-           .assign(unit = np.where(cond1, 't*km', df_olca['Unit']))
+           .assign(Unit = np.where(cond1, 't*km', df_olca['Unit']))
            .assign(FlowName = lambda x: np.where(cond1,
                    x['ProcessName'].str.rsplit(',', n=1).str.get(0),
                    x['FlowName']))
