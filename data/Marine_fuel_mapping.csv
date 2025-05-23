@@ -1,0 +1,2 @@
+SourceRepoName,SourceFlowName,SourceFlowUUID,SourceFlowContext,SourceUnit,MatchCondition,ConversionFactor,TargetRepoName,TargetFlowName,TargetUnit,Provider,Bridge,BridgeFlowName,Mapper,Verifier,LastUpdated,ConversionSource
+Marine,Residual,,,kg,=,1,USLCI,"Residual fuel oil, at refinery",kg,"Petroleum refining, at refinery",FALSE,,Young,,5/23/2025,

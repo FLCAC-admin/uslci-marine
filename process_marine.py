@@ -226,6 +226,14 @@ mapped_df = (mapped_df
                      (x['AvgOfDistance (nm)'] * NM_to_KM * x['Capacity (metric tons)']))
     )
 
+#%% Extract fuel information
+from flcac_utils.mapping import prepare_tech_flow_mappings
+
+## Identify mappings for technosphere flows (fuel inputs)
+fuel_df = pd.read_csv(data_path / 'Marine_fuel_mapping.csv')
+
+fuel_dict, flow_dict, provider_dict = prepare_tech_flow_mappings(fuel_df, auth=auth)
+
 #%% Update the reference_flow_var for each process
 df_olca = pd.concat([mapped_df,
                      (df[['US Region', 'Global Region', 'Fuel', 'Ship Type',
@@ -262,3 +270,151 @@ df_olca = (df_olca
                    x.apply(lambda z: make_uuid(z['FlowName'], z['Context']), axis=1),
                    x['FlowUUID']))
            )
+
+#%% Apply fuel data
+df_olca = (df_olca
+           ## For processes that require a bridge process, tag them and add
+           # the name of the repository.
+           # .assign(bridge = lambda x: np.where(
+           #     cond2, x['Fuel'].map({k: True for k, v in fuel_dict.items()
+           #                           if v.get('BRIDGE', False)}),
+           #     False))
+           # .assign(repo = lambda x: np.where(
+           #     cond2, x['Fuel'].map({k: list(v['repo'].keys())[0]
+           #                           for k, v in fuel_dict.items()
+           #                           if v.get('BRIDGE', False)}),
+           #     False))
+
+           ## Assign flow information for energy flows
+           .assign(FlowName = lambda x: np.where(
+               cond2, x['Fuel'].map({k: v['name'] for k, v in fuel_dict.items()}),
+               x['FlowName']))
+           .assign(FlowUUID = lambda x: np.where(
+               cond2, x['Fuel'].map({k: v['id'] for k, v in fuel_dict.items()}),
+               x['FlowUUID']))
+           # ^ only assign UUIDs where a bridge will not be used
+           .assign(Context = lambda x: np.where(
+               cond2, x['Fuel'].map({k: flow_dict.get(v['target_name']).category
+                                     for k, v in fuel_dict.items()}),
+               x['Context']))
+           .assign(unit = lambda x: np.where(cond2, 
+               x['Fuel'].map(
+               {k: v.get('unit') for k, v in fuel_dict.items()}), x['Unit']))
+           .assign(conversion = lambda x: np.where(cond2, 
+                x['Fuel'].map(
+               {k: v.get('conversion', 1) for k, v in fuel_dict.items()}), 1))
+           .assign(amount = lambda x: x['FlowAmount'] * x['conversion'])
+           # ^ apply unit conversion
+           .drop(columns=['conversion'])
+        )
+
+# Assign default providers where not a bridge process
+df_olca = (df_olca
+           .assign(default_provider_process = lambda x: x['FlowName']
+                   .map({v['name']: v['provider'] for k, v in fuel_dict.items()
+                         if not pd.isna(v['provider'])})
+                   # .fillna(x['default_provider_process'])
+                   )
+           .assign(default_provider = lambda x: x['default_provider_process']
+                   .map({k: v.id for k, v in provider_dict.items()})
+                         # .fillna(x['default_provider'])
+                         )
+           )
+
+df_olca = (df_olca
+           .query('not(FlowUUID.isna())')
+           .drop(columns=['bridge'], errors='ignore')
+           )
+df_bridge = pd.DataFrame()
+# df_olca.to_csv(parent_path /'marine_processed_output.csv', index=False)
+
+#%% Assign exchange dqi
+from flcac_utils.util import format_dqi_score, increment_dqi_value
+df_olca['exchange_dqi'] = format_dqi_score(marine_inputs['DQI']['Flow'])
+# drop DQI entry for reference flow
+df_olca['exchange_dqi'] = np.where(df_olca['reference'] == True,
+                                    '', df_olca['exchange_dqi'])
+
+#%% Aggregate
+
+df_olca = df_olca.drop(columns=['Energy', 'FlowTotal', 'tons',
+                                 'Zone', 'Leg', 'Engine',
+                                 'AvgOfDistance (nm)'])
+df_olca = (df_olca
+           .groupby([c for c in df_olca if c not in ['FlowAmount', 'amount']],
+                    dropna=False)
+           .agg('sum')
+           .reset_index()
+           )
+
+#%% prepare metadata
+from flcac_utils.generate_processes import build_location_dict
+from flcac_utils.util import assign_year_to_meta, \
+    extract_actors_from_process_meta, extract_dqsystems,\
+    extract_sources_from_process_meta, generate_locations_from_exchange_df
+
+with open(data_path / 'Marine_process_metadata.yaml') as f:
+    process_meta = yaml.safe_load(f)
+
+process_meta = assign_year_to_meta(process_meta, marine_inputs['Year'])
+process_meta['time_description'] = (process_meta['time_description']
+                                    .replace('[YEAR]', str(marine_inputs['Year']))
+                                    )
+# (process_meta, source_objs) = extract_sources_from_process_meta(
+#     process_meta, bib_path = data_path / 'transport.bib')
+(process_meta, actor_objs) = extract_actors_from_process_meta(process_meta)
+dq_objs = extract_dqsystems(marine_inputs['DQI']['dqSystem'])
+process_meta['dq_entry'] = format_dqi_score(marine_inputs['DQI']['Process'])
+
+# prepare locations
+# locations = generate_locations_from_exchange_df(df_olca)
+# location_objs = build_location_dict(df_olca, locations)
+
+#%% Build json file
+from flcac_utils.generate_processes import build_flow_dict, \
+    build_process_dict, write_objects, validate_exchange_data
+
+validate_exchange_data(df_olca)
+flows, new_flows = build_flow_dict(
+    pd.concat([df_olca, df_bridge], ignore_index=True))
+# pass bridge processes too to ensure those flows get created
+
+# replace newly created flows with those pulled via API
+api_flows = {flow.id: flow for k, flow in flow_dict.items()}
+if not(flows.keys() | api_flows.keys()) == flows.keys():
+    print('Warning, some flows not consistent')
+else:
+    flows.update(api_flows)
+
+processes = {}
+# loop through each vehicle type and region to adjust metadata before writing processes
+for s in df_olca['Ship Type'].unique():
+    _df_olca = df_olca.query('`Ship Type` == @s')
+    vehicle_desc = process_meta['vehicle_descriptions'].get(
+        re.sub(r'[^a-zA-Z0-9]', '_', s.replace(',','')))
+    for f in _df_olca['Fuel'].unique():
+        _process_meta = process_meta.copy()
+        _process_meta.pop('geography_description_US')
+        _process_meta.pop('vehicle_descriptions')
+        for k, v in _process_meta.items():
+            if not isinstance(v, str): continue
+            v = v.replace('[VEHICLE_TYPE]', s.title())
+            _process_meta[k] = v
+        p_dict = build_process_dict(_df_olca.query('Fuel == @f'),
+                                    flows, meta=_process_meta,
+                                       # loc_objs=location_objs,
+                                       # source_objs=source_objs,
+                                       actor_objs=actor_objs,
+                                       dq_objs=dq_objs,
+                                       )
+        processes.update(p_dict)
+# build bridge processes
+bridge_processes = build_process_dict(df_bridge, flows, meta=marine_inputs['Bridge'])
+
+#%% Write to json
+out_path = parent_path / 'output'
+write_objects('marine', flows, new_flows, processes,
+              # source_objs, actor_objs, dq_objs, location_objs, bridge_processes,
+              out_path = out_path)
+## ^^ Import this file into an empty database with units and flow properties only
+## or merge into USLCI and overwrite all existing datasets
