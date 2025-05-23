@@ -250,7 +250,8 @@ cond1 = df_olca['FlowName'] == 'reference_flow_var'
 cond2 = df_olca['FlowName'] == marine_inputs['EnergyFlow']
 
 df_olca = (df_olca
-           .assign(ProcessName = lambda x: ('Transport, ' + x['Ship Type'] + ', '
+           .assign(ProcessName = lambda x: ('Transport, '
+                                            + x['Ship Type'].str.lower() + ', '
                                             + (x['Fuel'].str.lower())
                                             + ' powered, ' + x['Global Region']
                                             + ' to ' + x['US Region']))
@@ -360,8 +361,8 @@ process_meta = assign_year_to_meta(process_meta, marine_inputs['Year'])
 process_meta['time_description'] = (process_meta['time_description']
                                     .replace('[YEAR]', str(marine_inputs['Year']))
                                     )
-# (process_meta, source_objs) = extract_sources_from_process_meta(
-#     process_meta, bib_path = data_path / 'transport.bib')
+(process_meta, source_objs) = extract_sources_from_process_meta(
+    process_meta, bib_path = data_path / 'transport.bib')
 (process_meta, actor_objs) = extract_actors_from_process_meta(process_meta)
 dq_objs = extract_dqsystems(marine_inputs['DQI']['dqSystem'])
 process_meta['dq_entry'] = format_dqi_score(marine_inputs['DQI']['Process'])
@@ -390,20 +391,20 @@ processes = {}
 # loop through each vehicle type and region to adjust metadata before writing processes
 for s in df_olca['Ship Type'].unique():
     _df_olca = df_olca.query('`Ship Type` == @s')
-    vehicle_desc = process_meta['vehicle_descriptions'].get(
-        re.sub(r'[^a-zA-Z0-9]', '_', s.replace(',','')))
+    # vehicle_desc = process_meta['vehicle_descriptions'].get(
+    #     re.sub(r'[^a-zA-Z0-9]', '_', s.replace(',','')))
     for f in _df_olca['Fuel'].unique():
         _process_meta = process_meta.copy()
         _process_meta.pop('geography_description_US')
-        _process_meta.pop('vehicle_descriptions')
         for k, v in _process_meta.items():
             if not isinstance(v, str): continue
-            v = v.replace('[VEHICLE_TYPE]', s.title())
+            v = v.replace('[SHIP_TYPE]', s.title())
+            v = v.replace('[FUEL]', f)
             _process_meta[k] = v
         p_dict = build_process_dict(_df_olca.query('Fuel == @f'),
                                     flows, meta=_process_meta,
                                        # loc_objs=location_objs,
-                                       # source_objs=source_objs,
+                                       source_objs=source_objs,
                                        actor_objs=actor_objs,
                                        dq_objs=dq_objs,
                                        )
@@ -414,7 +415,8 @@ bridge_processes = build_process_dict(df_bridge, flows, meta=marine_inputs['Brid
 #%% Write to json
 out_path = parent_path / 'output'
 write_objects('marine', flows, new_flows, processes,
-              # source_objs, actor_objs, dq_objs, location_objs, bridge_processes,
+              source_objs, actor_objs, dq_objs,
+              # location_objs, bridge_processes,
               out_path = out_path)
 ## ^^ Import this file into an empty database with units and flow properties only
 ## or merge into USLCI and overwrite all existing datasets
