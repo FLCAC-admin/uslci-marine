@@ -1,10 +1,13 @@
 # Input Data for USLCI-Marine
 
 - [Engine characteristics](engine_characteristics.csv): Main engine size and type
-by vessel. Source:
+by vessel. Source: [EPA 2022, Table C.3](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
 
 - [Auxiliary load](auxiliary_load.csv) and [Boiler load](boiler_load.csv): Engine
-size by vessel and by leg. Source: 
+size by vessel and by leg. Source:
+
+- [Brake Specific Fuel Consumption](BFSC.csv): Brake Specific Fuel Consumption. Source: [EPA 2022, Table 3.6](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
+  
 
 - [Distances](distances.csv): Distance between typical ports by region in nautical
 miles.
