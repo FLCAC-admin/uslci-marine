@@ -1,0 +1,17 @@
+﻿Engine Group,Fuel Type,Engine Type,BSFC (g/kWh)
+Propulsion,MGO/MDO,SSD,185
+Propulsion,MGO/MDO,MSD,205
+Propulsion,MGO/MDO,ST,300
+Propulsion,MGO/MDO,GT,300
+Propulsion,RM/HFO,SSD,195
+Propulsion,RM/HFO,MSD,215
+Propulsion,RM/HFO,ST,305
+Propulsion,RM/HFO,GT,305
+Propulsion,LNG,LNG,166
+Auxiliary,MGO/MDO,MSD,217
+Auxiliary,MGO/MDO,HSD,217
+Auxiliary,RM/HFO,MSD,227
+Auxiliary,RM/HFO,HSD,227
+Auxiliary,LNG,LNG,166
+Boiler,MGO/MDO,Boiler,300
+Boiler,RM/HFO,Boiler,305
