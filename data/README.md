@@ -17,5 +17,5 @@ Source: [EPA 2022, Table 3.10](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J
 
 - [Hotel hours](hotel_hours.csv): 
 
-- [Transit speed ratios](transit_speed_ratios): 
+- [Transit speed ratios](transit_speed_ratios.csv): 
 Source: [EPA 2022, Table 3.12](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)

@@ -1,24 +1,24 @@
-﻿US Region,Global Region,AvgOfDistance (nm)
-East Coast,Africa,7179
-East Coast,Asia,10109
-East Coast,Atlantic of Central/South America,1094
-East Coast,Bermuda,697
-East Coast,Caribbean,847.4375
-East Coast,Eastern Canada,593
-East Coast,Europe,3229.75
-East Coast,Pacific of Central/South America,1927.5
-Hawaii,Asia,3333
-US Caribbean,Atlantic of Central/South America,2950
-US Caribbean,Caribbean,206.03
-US Caribbean,Eastern Canada,1580
-US Caribbean,Gulf of Mexico,1818
-US Gulf,Africa,7340
-US Gulf,Asia,9960
-US Gulf,Atlantic of Central/South America,1047.5
-US Gulf,Caribbean,1225.5
-US Gulf,Gulf of Mexico,516
-US Gulf,Pacific of Central/South America,930
-West Coast,Asia,5680.75
-West Coast,Pacific of Central/South America,2039
-West Coast,Western Canada,136
-West Coast,Western Mexico,1643
+﻿US Region,Global Region,AvgOfDistance (nm),AvgPctECA,DestManeuv_Distance,OrigManeuv_Distance
+East Coast,Africa,7179,0.044,2.888,14.75
+East Coast,Asia,10109,0.024,2.508,14.75
+East Coast,Atlantic of Central/South America,1094,0.035,12.695,1.727
+East Coast,Bermuda,697,0.344,0.979,14.75
+East Coast,Caribbean,847,0.193,2.412,4.574
+East Coast,Eastern Canada,593,0.937,6.477,14.75
+East Coast,Europe,3230,0.231,7.811,14.429
+East Coast,Pacific of Central/South America,1928,0.099,0.533,2.741
+Hawaii,Asia,3333,0.1,3.352,0.803
+US Caribbean,Atlantic of Central/South America,2950,0.07,3.614,5.867
+US Caribbean,Caribbean,206,0.099,0.827,5.867
+US Caribbean,Eastern Canada,1580,0.116,6.477,5.867
+US Caribbean,Gulf of Mexico,1818,0.089,7.657,5.867
+US Gulf,Africa,7340,0.024,1.222,13.524
+US Gulf,Asia,9960,0.005,2.74,14.043
+US Gulf,Atlantic of Central/South America,1048,0.252,1.919,7.227
+US Gulf,Caribbean,1225,0.395,1.128,25.322
+US Gulf,Gulf of Mexico,516,0.446,7.657,25.322
+US Gulf,Pacific of Central/South America,930,0.126,0.533,1.478
+West Coast,Asia,5680,0.012,7.633,3.874
+West Coast,Pacific of Central/South America,2039,0.038,0.533,2.968
+West Coast,Western Canada,136,0.979,4.722,5.339
+West Coast,Western Mexico,1643,0.057,0.917,3.344

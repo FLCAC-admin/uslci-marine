@@ -14,6 +14,10 @@ parent_path = Path(__file__).parent
 data_path =  parent_path / 'data'
 
 NM_to_KM = 1.852 # km per nautical mile
+US_HOTEL = 34.6 # Avg for container, update for all ship types
+AVG_SPEED_FACTOR = 0.75 # Average speed as percent of max speed
+MANEUV_SPEED = 4  # TODO: update
+ANCH_SPEED = 2 # TODO: update
 
 #%% Prepare dataset of marine emissions
 
@@ -27,18 +31,19 @@ distances = pd.read_csv(data_path / 'distances.csv')
 # Prepare the engine specs
 speeds = (pd.read_csv(data_path / 'engine_characteristics.csv')
           .query('`Ship Type`.isin(@marine_runs0["Ship Type"])') # Simplify for now
-          .assign(Cruise_speed = lambda x: x['Max Speed (kn)'] * 0.75)
+          .assign(Cruise_speed = lambda x: x['Max Speed (kn)'] * AVG_SPEED_FACTOR)
           .assign(Avg_cruise_draft = lambda x: x['Max Draft (m)'] * 0.6)
           .merge(pd.read_csv(data_path / 'transit_speed_ratios.csv'),
                  how='left', on='Ship Type')
           .assign(Transit_speed = lambda x:
                   x['Max Speed (kn)'] * x['Mode of Transit Speed Ratios'])
+          .assign(Maneuvering_speed = MANEUV_SPEED)
+          .assign(Anchorage_speed = ANCH_SPEED)
+          # Load = speed ^ 3
           .assign(Transit_load = lambda x:
                   pow(x['Transit_speed'] / x['Max Speed (kn)'], 3))
-          .assign(Maneuvering_speed = 4) # TODO: update
           .assign(Maneuvering_load = lambda x:
                   pow(x['Maneuvering_speed'] / x['Max Speed (kn)'], 3))
-          .assign(Anchorage_speed = 2) # TODO: update
           .assign(Anchorage_load = lambda x:
                   pow(x['Anchorage_speed'] / x['Max Speed (kn)'], 3))
           )
@@ -85,7 +90,6 @@ speeds = (pd.concat([
 del(speeds2)
 
 
-US_HOTEL = 34.6
 # Calculate time for each run by leg
 marine_runs = (marine_runs0
       .merge(distances, how='left', on=['US Region', 'Global Region'])
@@ -95,9 +99,9 @@ marine_runs = (marine_runs0
       .merge(pd.read_csv(data_path / 'hotel_hours.csv')
              .rename(columns={'Hotel Time': 'Origin_hotel_time'}),
              how='left', on='Global Region')
-      .assign(Origin_maneuv_time = 5) # ASSUMPTION
-      .assign(Dest_maneuv_time = 5) # ASSUMPTION
-      .assign(Dest_anchor_time = 5) # ASSUMPTION
+      .assign(Origin_maneuv_time = lambda x: x['DestManeuv_Distance'] / 5.5) # 
+      .assign(Dest_maneuv_time = lambda x: x['OrigManeuv_Distance'] / 3) #
+      .assign(Dest_anchor_time = lambda x: x['Total_time'] * 0.065) # Assumes 6.5% of total travel time
       .assign(Dest_hotel_time = US_HOTEL)
       .assign(Transit_time = lambda x:
               x['Total_time'] - x['Origin_maneuv_time'] - x['Dest_maneuv_time'])
@@ -112,9 +116,12 @@ for l in [x for x in legs if x != 'Transit']:
     marine_runs[f'Dest_{l}_ECA'] = 1 # US is in ECA
     marine_runs[f'Origin_{l}_ECA'] = np.where(
         marine_runs['Global Region']
-        .isin(['Europe', 'Eastern Canada', 'Western Canada']),
+        .isin(['Europe', 'Eastern Canada', 'Western Canada',
+               'Gulf of Mexico', 'Western Mexico']),
         1, 0)
-marine_runs['Transit_ECA'] = 0
+## TRANSIT ECA based on lookup
+marine_runs['Transit_ECA'] = marine_runs['AvgPctECA']
+
 
 marine_runs = (marine_runs
       .merge(pd.DataFrame(zones, columns=['Zone']), how='cross')
@@ -147,8 +154,10 @@ df = (marine_runs
 for l in legs:
     df[f'{l}_energy'] = np.where(
         df['Leg'] == l, df[f'{l}_time'] * df[f'{l}_power'], 0)
+df_qa = df.copy()
 df = df.drop(columns=df.filter(
-    regex='^.*?(speed|Speed|load|time|Time|Draft|draft|power).*?').columns)
+    regex=('^.*?(speed|Speed|load|time|Time|Draft|draft|power|'
+           'AvgPctECA|Maneuv_Dist).*?')).columns)
 
 #%% Generate combined dataset
 
@@ -165,6 +174,7 @@ emissions = (emissions
              .merge(elf, how='left', on='Pollutant')
              .assign(ELF = lambda x: x['ELF'].fillna(1))
              )
+## TODO: bring in flow speciation
 
 df = (df
       .merge(emissions, how='left', on=['Engine', 'Fuel'])
@@ -182,6 +192,7 @@ df = (df
       .assign(FlowTotal = lambda x: x['EF'] * x['Energy'] / 1000)
       .assign(Unit = 'kg')
       .drop(columns=df.filter(regex='^.*?(energy).*?').columns)
+      # Add tons for validation to original file
       .assign(tons = lambda x: x['FlowTotal'] * .00110231)
       )
 
@@ -193,6 +204,7 @@ df = (df
           lambda row: "/".join([row['Zone'], row['Leg']]), axis=1))
       )
 
+df_qa2 = df.copy()
 ## Drop unneccesary fields
 df = df.drop(columns=['Engine Category', 'Engine Type',
                       'Installed Propulsion Power (kW)',
@@ -224,6 +236,7 @@ mapped_df = apply_flow_mapping(
 mapped_df = (mapped_df
              .assign(FlowAmount = lambda x: x['FlowTotal'] /
                      (x['AvgOfDistance (nm)'] * NM_to_KM * x['Capacity (metric tons)']))
+             # TODO?? Here should we add utilization rates? (e.g. 75-85%)
     )
 
 #%% Extract fuel information
@@ -308,6 +321,12 @@ df_olca = (df_olca
            # ^ apply unit conversion
            .drop(columns=['conversion'])
         )
+
+## TODO: fuel consumption has dropped dramatically compared to old data need to
+# do a carbon comparison;
+# based on some checks it seems that the amount of fuel in the old processes is too high
+# given the reported CO2 emissions, and that the CO2 content relative to fuel consumed
+# is more appropriate in the new data
 
 # Assign default providers where not a bridge process
 df_olca = (df_olca
@@ -395,7 +414,6 @@ for s in df_olca['Ship Type'].unique():
     #     re.sub(r'[^a-zA-Z0-9]', '_', s.replace(',','')))
     for f in _df_olca['Fuel'].unique():
         _process_meta = process_meta.copy()
-        _process_meta.pop('geography_description_US')
         for k, v in _process_meta.items():
             if not isinstance(v, str): continue
             v = v.replace('[SHIP_TYPE]', s.title())
