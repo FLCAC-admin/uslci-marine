@@ -1,6 +1,6 @@
 # Input Data for USLCI-Marine
 
-- [Engine characteristics](engine_characteristics.csv): Main engine size, max speed and type
+- [Engine characteristics](engine_characteristics.csv): Main engine size, max speed, and type
 by vessel. Source: [EPA 2022, Table C.3](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
 
 - [Auxiliary load](auxiliary_load.csv) and [Boiler load](boiler_load.csv): Engine
