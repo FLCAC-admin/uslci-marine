@@ -4,7 +4,7 @@
 by vessel. Source: [EPA 2022, Table C.3](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
 
 - [Auxiliary load](auxiliary_load.csv) and [Boiler load](boiler_load.csv): Engine
-size by vessel and by leg. Source:
+size by vessel and by leg. Source:[EPA 2022, Table E.1 and E.2](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
 
 - [Brake Specific Fuel Consumption](BFSC.csv): Brake Specific Fuel Consumption. Source: [EPA 2022, Table 3.6](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
   
