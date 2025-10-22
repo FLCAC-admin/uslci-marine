@@ -10,7 +10,7 @@ size by vessel and by leg. Source: [EPA 2022, Table E.1 and E.2](https://nepis.e
   
 
 - [Distances](distances.csv): Distance between typical ports by region in nautical
-miles.
+miles.  Calcuated by mapping shipping lanes and typical routes from Entrance and Clearance including emission control areas. Sources [ArcGIS, 2013](https://www.arcgis.com/home/item.html?id=12c0789207e64714b9545ad30fca1633), [NDC, 2023](https://ndclibrary.sec.usace.army.mil/resource?title=Vessel%20Entrances%20and%20Clearances%20-%202023&documentId=5c8077e4-23a6-4cb2-e9a5-86272e6fd2ca0, and [IMO](https://www.imo.org/en/ourwork/environment/pages/emission-control-areas-(ecas)-designated-under-regulation-13-of-marpol-annex-vi-(nox-emission-control).aspx)
 
 - [Emission factors](emission_factors.csv): Emission factors in g/kWh by engine type
 and fuel. Source: [EPA 2024, Table 11](https://gaftp.epa.gov/air/emismod/2022/v1/reports/mobile/CMV/2022%20C3%20Marine%20Emissions%20Tool%20%20Documentation.pdf), [EPA 2022, Equations 3.3, 3.4, and 3.5 and Tables 3.6 (averaged), 3.8, and 3.9](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
