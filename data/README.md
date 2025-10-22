@@ -13,7 +13,7 @@ size by vessel and by leg. Source: [EPA 2022, Table E.1 and E.2](https://nepis.e
 miles.
 
 - [Emission factors](emission_factors.csv): Emission factors in g/kWh by engine type
-and fuel. Source: [EPA 2024, Table 11](https://gaftp.epa.gov/air/emismod/2022/v1/reports/mobile/CMV/2022%20C3%20Marine%20Emissions%20Tool%20%20Documentation.pdf), [EPA 2022, Table 3.8](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
+and fuel. Source: [EPA 2024, Table 11](https://gaftp.epa.gov/air/emismod/2022/v1/reports/mobile/CMV/2022%20C3%20Marine%20Emissions%20Tool%20%20Documentation.pdf), [EPA 2022, Equations 3.3, 3.4, and 3.5 and Tables 3.6 (averaged), 3.8, and 3.9](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
 
 - [Engine load factor](engine_load_factor.csv): Low load adjustment factors (<2%).
 Source: [EPA 2022, Table 3.10](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
