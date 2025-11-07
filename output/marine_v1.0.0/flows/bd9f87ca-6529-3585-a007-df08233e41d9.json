@@ -1,0 +1,20 @@
+{
+  "@type": "Flow",
+  "@id": "bd9f87ca-6529-3585-a007-df08233e41d9",
+  "category": "Technosphere Flows / 48-49: Transportation and Warehousing / 4831: Deep Sea, Coastal, and Great Lakes Water Transportation",
+  "flowProperties": [
+    {
+      "conversionFactor": 1.0,
+      "flowProperty": {
+        "@type": "FlowProperty",
+        "@id": "838aaa20-0117-11db-92e3-0800200c9a66",
+        "name": "Goods transport (mass*distance)"
+      },
+      "isRefFlowProperty": true
+    }
+  ],
+  "flowType": "PRODUCT_FLOW",
+  "lastChange": "2025-11-07T12:00:00Z",
+  "name": "Transport, container ship, residual fuel oil powered",
+  "version": "01.00.000"
+}

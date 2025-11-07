@@ -1,0 +1,43 @@
+{
+  "@type": "Flow",
+  "@id": "f7c00d19-9601-373a-ba23-593e251b4dee",
+  "category": "Technosphere flows/31-33: Manufacturing/3241: Petroleum and Coal Products Manufacturing",
+  "flowProperties": [
+    {
+      "conversionFactor": 37299.339,
+      "flowProperty": {
+        "@type": "FlowProperty",
+        "@id": "f6811440-ee37-11de-8a39-0800200c9a66",
+        "category": "Technical flow properties",
+        "name": "Energy",
+        "refUnit": "MJ"
+      }
+    },
+    {
+      "conversionFactor": 944.2870633,
+      "flowProperty": {
+        "@type": "FlowProperty",
+        "@id": "93a60a56-a3c8-11da-a746-0800200b9a66",
+        "category": "Technical flow properties",
+        "name": "Mass",
+        "refUnit": "kg"
+      }
+    },
+    {
+      "conversionFactor": 1.0,
+      "flowProperty": {
+        "@type": "FlowProperty",
+        "@id": "93a60a56-a3c8-22da-a746-0800200c9a66",
+        "category": "Technical flow properties",
+        "name": "Volume",
+        "refUnit": "m3"
+      },
+      "isRefFlowProperty": true
+    }
+  ],
+  "flowType": "PRODUCT_FLOW",
+  "isInfrastructureFlow": false,
+  "lastChange": "2024-12-20T20:07:04.110Z",
+  "name": "Residual fuel oil, at refinery",
+  "version": "00.00.006"
+}
