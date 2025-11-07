@@ -15,6 +15,9 @@ miles.  Calcuated by mapping shipping lanes and typical routes from Entrance and
 - [Emission factors](emission_factors.csv): Emission factors in g/kWh by engine type
 and fuel. Source: [EPA 2024, Table 11](https://gaftp.epa.gov/air/emismod/2022/v1/reports/mobile/CMV/2022%20C3%20Marine%20Emissions%20Tool%20%20Documentation.pdf) and [EPA 2022, Equations 3.3, 3.4, and 3.5 and Tables 3.6 (averaged), 3.8, and 3.9](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
 
+- [Emission flow speciation](flow_speciation.csv): HAP speciation profiles for marine engines.
+Source [EPA 2022, Table D.1](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
+
 - [Engine load factor](engine_load_factor.csv): Low load adjustment factors (<2%).
 Source: [EPA 2022, Table 3.10](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
 

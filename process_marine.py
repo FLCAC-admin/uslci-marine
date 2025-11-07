@@ -167,6 +167,31 @@ emissions = (pd.read_csv(data_path / 'emission_factors.csv')
                    var_name = 'Pollutant',
                    value_name = 'EF')
              )
+
+# Apply speciation
+speciation_df = pd.read_csv(data_path / 'flow_speciation.csv')
+# Create a mapping from Basis to list of matching Pollutants
+pollutant_mapping = {}
+for basis in speciation_df['Basis'].unique():
+    if basis == 'PM2.5':
+        # PM2.5 applies to both PM2.5 ECA and PM2.5 nonECA
+        pollutant_mapping[basis] = ['PM25 ECA', 'PM25 nonECA']
+    else:
+        pollutant_mapping[basis] = [basis]
+new_rows = []
+for _, emission_row in emissions.iterrows():
+    pollutant = emission_row['Pollutant']
+    for _, spec_row in speciation_df.iterrows():
+        basis = spec_row['Basis']
+        if pollutant in pollutant_mapping.get(basis, []):
+            new_row = emission_row.copy()
+            new_row['Pollutant'] = spec_row['Pollutant']  # Replace with speciated pollutant name
+            new_row['EF'] = emission_row['EF'] * spec_row['Fraction']  # Adjust EF
+            new_rows.append(new_row)
+
+# Append the new rows to the original emissions dataframe
+emissions = pd.concat([emissions, pd.DataFrame(new_rows)], ignore_index=True)
+
 elf = pd.read_csv(data_path / 'engine_load_factor.csv')
 elf.columns = ['Pollutant', 'ELF']
 ## TODO: confirm all the load factors are accounted for
@@ -174,7 +199,6 @@ emissions = (emissions
              .merge(elf, how='left', on='Pollutant')
              .assign(ELF = lambda x: x['ELF'].fillna(1))
              )
-## TODO: bring in flow speciation
 
 df = (df
       .merge(emissions, how='left', on=['Engine', 'Fuel'])
