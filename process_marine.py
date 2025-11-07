@@ -7,6 +7,7 @@ import pandas as pd
 import numpy as np
 import itertools
 from pathlib import Path
+from statistics import mean
 import re
 
 auth = True
@@ -14,20 +15,18 @@ parent_path = Path(__file__).parent
 data_path =  parent_path / 'data'
 
 NM_to_KM = 1.852 # km per nautical mile
-MANEUV_SPEED = 4  # TODO: update to differentiate inbound and outbound?
-ANCH_SPEED = 2 # TODO: update
+ANCH_SPEED = 0 # No propulsion used while at anchorage
 SM_OPEN = 1.15 # Sea margin for at sea operations (see Propellers Law)
 SM_COASTAL = 1.1 # Sea margin for coastal operations (see Propellers Law)
 ANCH_TIME = 0.065 # Assumes 6.5% of total time
 DEST_MANEUV_SPEED = 3
 ORIGIN_MANEUV_SPEED = 5.5
 
-#%% Prepare dataset of marine emissions
+#%% 1. Prepare dataset of marine vessels and routes
 
 with open(data_path / "marine_inputs.yaml", "r") as file:
     marine_inputs = yaml.safe_load(file)
 
-## Check Teams (Task 3 Transportation Datasets / Marine) for the latest data
 marine_runs0 = pd.read_csv(data_path / 'marine_runs.csv')
 distances = pd.read_csv(data_path / 'distances.csv')
 
@@ -41,7 +40,7 @@ speeds = (pd.read_csv(data_path / 'engine_characteristics.csv')
                  how='left', on='Ship Type')
           .assign(Transit_speed = lambda x:
                   x['Max Speed (kn)'] * x['Transit Speed Ratio'])
-          .assign(Maneuvering_speed = MANEUV_SPEED)
+          .assign(Maneuvering_speed = mean([DEST_MANEUV_SPEED, ORIGIN_MANEUV_SPEED]))
           .assign(Anchorage_speed = ANCH_SPEED)
           # Load = (speed / max speed)^ 3  Propellers Law
           .assign(Transit_load = lambda x:
@@ -166,7 +165,7 @@ df = df.drop(columns=df.filter(
     regex=('^.*?(speed|Speed|load|time|Time|Draft|draft|power|'
            'AvgPctECA|Maneuv_Dist).*?')).columns)
 
-#%% Generate combined dataset
+#%% 2. Pull in emission factors and generate combined dataset
 
 # Bring in Emission Factors
 emissions = (pd.read_csv(data_path / 'emission_factors.csv')
@@ -244,7 +243,7 @@ df = df.drop(columns=['Engine Category', 'Engine Type',
                       'Installed Propulsion Power (kW)',
                       'EF', 'ELF', 'EF_Unit'])
 
-#%% Align elementary flows with FEDEFL
+#%% 3. Align elementary flows with FEDEFL
 from esupy.mapping import apply_flow_mapping
 from esupy.util import make_uuid
 
