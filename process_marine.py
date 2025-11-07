@@ -205,7 +205,7 @@ elf.columns = ['Pollutant', 'ELF']
 ## TODO: confirm all the load factors are accounted for
 emissions = (emissions
              .merge(elf, how='left', on='Pollutant')
-             .assign(ELF = lambda x: x['ELF'].fillna(1))
+             .assign(ELF = lambda x: x['ELF'].fillna(1.0))
              )
 
 df = (df
@@ -268,11 +268,13 @@ mapped_df = apply_flow_mapping(
     ).rename(columns={'Pollutant': 'FlowName'})
 
 #%% Convert to reference unit
+from flcac_utils.util import round_to_sig_figs
 mapped_df = (mapped_df
              .assign(FlowAmount = lambda x: x['FlowTotal'] /
                      (x['AvgOfDistance (nm)'] * NM_to_KM * x['Capacity (metric tons)']
                       * x['Utilization'].fillna(1)))
     )
+mapped_df['FlowAmount'] = mapped_df['FlowAmount'].apply(lambda x: round_to_sig_figs(x, 4))
 
 #%% Extract fuel information
 from flcac_utils.mapping import prepare_tech_flow_mappings
