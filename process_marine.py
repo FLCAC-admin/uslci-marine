@@ -32,6 +32,8 @@ distances = pd.read_csv(data_path / 'distances.csv')
 
 # Prepare the engine specs
 speeds = (pd.read_csv(data_path / 'engine_characteristics.csv')
+          .merge(pd.read_csv(data_path / 'utilization.csv'), how='left',
+                 on='Ship Type')
           # Subset the df for relevant ship types
           .query('`Ship Type`.isin(@marine_runs0["Ship Type"])')
           .query('Subtype.isin(@marine_runs0["Subtype"])')
@@ -268,8 +270,8 @@ mapped_df = apply_flow_mapping(
 #%% Convert to reference unit
 mapped_df = (mapped_df
              .assign(FlowAmount = lambda x: x['FlowTotal'] /
-                     (x['AvgOfDistance (nm)'] * NM_to_KM * x['Capacity (metric tons)']))
-             # TODO?? Here should we add utilization rates? (e.g. 75-85%)
+                     (x['AvgOfDistance (nm)'] * NM_to_KM * x['Capacity (metric tons)']
+                      * x['Utilization'].fillna(1)))
     )
 
 #%% Extract fuel information
