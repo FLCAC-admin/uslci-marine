@@ -14,10 +14,13 @@ parent_path = Path(__file__).parent
 data_path =  parent_path / 'data'
 
 NM_to_KM = 1.852 # km per nautical mile
-US_HOTEL = 34.6 # Avg for container, update for all ship types
-AVG_SPEED_FACTOR = 0.75 # Average speed as percent of max speed
-MANEUV_SPEED = 4  # TODO: update
+MANEUV_SPEED = 4  # TODO: update to differentiate inbound and outbound?
 ANCH_SPEED = 2 # TODO: update
+SM_OPEN = 1.15 # Sea margin for at sea operations (see Propellers Law)
+SM_COASTAL = 1.1 # Sea margin for coastal operations (see Propellers Law)
+ANCH_TIME = 0.065 # Assumes 6.5% of total time
+DEST_MANEUV_SPEED = 3
+ORIGIN_MANEUV_SPEED = 5.5
 
 #%% Prepare dataset of marine emissions
 
@@ -30,16 +33,17 @@ distances = pd.read_csv(data_path / 'distances.csv')
 
 # Prepare the engine specs
 speeds = (pd.read_csv(data_path / 'engine_characteristics.csv')
-          .query('`Ship Type`.isin(@marine_runs0["Ship Type"])') # Simplify for now
-          .assign(Cruise_speed = lambda x: x['Max Speed (kn)'] * AVG_SPEED_FACTOR)
-          .assign(Avg_cruise_draft = lambda x: x['Max Draft (m)'] * 0.6)
+          # Subset the df for relevant ship types
+          .query('`Ship Type`.isin(@marine_runs0["Ship Type"])')
+          .query('Subtype.isin(@marine_runs0["Subtype"])')
+          # .assign(Avg_cruise_draft = lambda x: x['Max Draft (m)'] * 0.6)
           .merge(pd.read_csv(data_path / 'transit_speed_ratios.csv'),
                  how='left', on='Ship Type')
           .assign(Transit_speed = lambda x:
-                  x['Max Speed (kn)'] * x['Mode of Transit Speed Ratios'])
+                  x['Max Speed (kn)'] * x['Transit Speed Ratio'])
           .assign(Maneuvering_speed = MANEUV_SPEED)
           .assign(Anchorage_speed = ANCH_SPEED)
-          # Load = speed ^ 3
+          # Load = (speed / max speed)^ 3  Propellers Law
           .assign(Transit_load = lambda x:
                   pow(x['Transit_speed'] / x['Max Speed (kn)'], 3))
           .assign(Maneuvering_load = lambda x:
@@ -69,11 +73,12 @@ speeds2 = speeds2.drop(columns=speeds2.filter(regex='_$').columns)
 speeds = (pd.concat([
     (speeds
           .assign(Transit_power = lambda x:
-                  x['Installed Propulsion Power (kW)'] * x['Transit_load'] * 1.15)
+                  x['Installed Propulsion Power (kW)'] * x['Transit_load'] * SM_OPEN)
           .assign(Maneuvering_power = lambda x:
-                  x['Installed Propulsion Power (kW)'] * x['Maneuvering_load'] * 1.1)
+                  x['Installed Propulsion Power (kW)'] * x['Maneuvering_load'] * SM_COASTAL)
           .assign(Anchorage_power = lambda x:
-                  x['Installed Propulsion Power (kW)'] * x['Anchorage_load'] * 1.1)
+                  x['Installed Propulsion Power (kW)'] * x['Anchorage_load'] * SM_COASTAL)
+          # ^^ Account for sea margin in the Propellers Law
           .assign(Port_power = 0)
           .assign(Engine = 'Main')),
      speeds2], ignore_index=True)
@@ -93,16 +98,18 @@ del(speeds2)
 # Calculate time for each run by leg
 marine_runs = (marine_runs0
       .merge(distances, how='left', on=['US Region', 'Global Region'])
-      .merge(speeds.filter(['Ship Type', 'Subtype', 'Cruise_speed']).drop_duplicates(),
+      .merge(speeds.filter(['Ship Type', 'Subtype', 'Transit_speed']).drop_duplicates(),
              how='left', on=['Ship Type', 'Subtype'])
-      .assign(Total_time = lambda x: x['AvgOfDistance (nm)'] / x['Cruise_speed'])
+      .assign(Total_time = lambda x: x['AvgOfDistance (nm)'] / x['Transit_speed'])
       .merge(pd.read_csv(data_path / 'hotel_hours.csv')
              .rename(columns={'Hotel Time': 'Origin_hotel_time'}),
              how='left', on='Global Region')
-      .assign(Origin_maneuv_time = lambda x: x['DestManeuv_Distance'] / 5.5) # 
-      .assign(Dest_maneuv_time = lambda x: x['OrigManeuv_Distance'] / 3) #
-      .assign(Dest_anchor_time = lambda x: x['Total_time'] * 0.065) # Assumes 6.5% of total travel time
-      .assign(Dest_hotel_time = US_HOTEL)
+      .assign(Origin_maneuv_time = lambda x: x['OrigManeuv_Distance'] / ORIGIN_MANEUV_SPEED)
+      .assign(Dest_maneuv_time = lambda x: x['DestManeuv_Distance'] / DEST_MANEUV_SPEED)
+      .assign(Dest_anchor_time = lambda x: x['Total_time'] * ANCH_TIME)
+      .merge(pd.read_csv(data_path / 'hotel_hours_us.csv')
+             .rename(columns={'Hotel Time': 'Dest_hotel_time'}),
+             how='left', on='Ship Type')
       .assign(Transit_time = lambda x:
               x['Total_time'] - x['Origin_maneuv_time'] - x['Dest_maneuv_time'])
       )

@@ -21,7 +21,8 @@ Source [EPA 2022, Table D.1](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S
 - [Engine load factor](engine_load_factor.csv): Low load adjustment factors (<2%).
 Source: [EPA 2022, Table 3.10](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
 
-- [Hotel hours](hotel_hours.csv): For foreign, averaged days by region and converted to hours. US hours are unconverted. Source: [Statista 2022](https://www.statista.com/statistics/1101596/port-turnaround-times-by-country/#:~:text=Median%20time%20spent%20in%20port%20by%20container%20ships%20worldwide%20by%20segment%202021&text=In%202021%2C%20container%20ships%20spent,port%20during%20a%20port%20call.), [BTS 2022a](https://data.bts.gov/stories/s/Container-Vessel-Dwell-Times/pbag-pyes), and [BTS 2022b](https://data.bts.gov/stories/s/Tanker-Vessel-Dwell-Times/ari2-ub6a)
+- Hotel hours: For [foreign ports](hotel_hours.csv), averaged days by region and converted to hours.
+For [US ports](hotel_hours_us.csv), hours are sourced from BTS. Source: [Statista 2022](https://www.statista.com/statistics/1101596/port-turnaround-times-by-country/#:~:text=Median%20time%20spent%20in%20port%20by%20container%20ships%20worldwide%20by%20segment%202021&text=In%202021%2C%20container%20ships%20spent,port%20during%20a%20port%20call.), [BTS 2022a](https://data.bts.gov/stories/s/Container-Vessel-Dwell-Times/pbag-pyes), and [BTS 2022b](https://data.bts.gov/stories/s/Tanker-Vessel-Dwell-Times/ari2-ub6a)
 
 - [Transit speed ratios](transit_speed_ratios.csv): Used to calculate typical speeds from max speed.
 Source: [EPA 2022, Table 3.12](https://nepis.epa.gov/Exe/ZyPDF.cgi?Dockey=P1014J1S.pdf)
