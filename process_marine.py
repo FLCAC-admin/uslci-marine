@@ -187,6 +187,9 @@ df = (df
                         ['ECA', 'nonECA'], default=''))
       .query('~(description == "ECA" and Zone == "nonECA")')
       .query('~(description == "nonECA" and Zone == "ECA")')
+      # Drop ECA from the pollutant name, no longer needed
+      .assign(Pollutant = lambda x:
+              x['Pollutant'].str.replace(r'(ECA|nonECA)', '', regex=True).str.strip())
       .assign(EF_Unit = 'g / kWh')
       .assign(Energy = lambda x: x[[f'{c}_energy' for c in legs]].sum(axis=1))
       .assign(FlowTotal = lambda x: x['EF'] * x['Energy'] / 1000)
