@@ -17,7 +17,7 @@
   },
   "exchanges": [
     {
-      "amount": 0.00396276,
+      "amount": 0.003961,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -40,7 +40,7 @@
       }
     },
     {
-      "amount": 0.0001901,
+      "amount": 0.0001905,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -63,7 +63,7 @@
       }
     },
     {
-      "amount": 8.15204e-06,
+      "amount": 8.153e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -86,7 +86,7 @@
       }
     },
     {
-      "amount": 4.311e-07,
+      "amount": 4.307e-07,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -109,7 +109,7 @@
       }
     },
     {
-      "amount": 6.72064e-08,
+      "amount": 6.723e-08,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -132,7 +132,7 @@
       }
     },
     {
-      "amount": 3.6559999999999998e-09,
+      "amount": 3.651e-09,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -155,7 +155,7 @@
       }
     },
     {
-      "amount": 9.3891e-05,
+      "amount": 9.395e-05,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -178,7 +178,7 @@
       }
     },
     {
-      "amount": 4.516999999999999e-06,
+      "amount": 4.517e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -201,7 +201,7 @@
       }
     },
     {
-      "amount": 2.19118e-07,
+      "amount": 2.187e-07,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -224,7 +224,7 @@
       }
     },
     {
-      "amount": 9.725e-09,
+      "amount": 9.724e-09,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -247,7 +247,7 @@
       }
     },
     {
-      "amount": 3.95065e-06,
+      "amount": 3.954e-06,
       "description": "ECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -293,7 +293,7 @@
       }
     },
     {
-      "amount": 2.275e-07,
+      "amount": 2.277e-07,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -316,7 +316,7 @@
       }
     },
     {
-      "amount": 3.84078e-06,
+      "amount": 3.836e-06,
       "description": "ECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -362,7 +362,7 @@
       }
     },
     {
-      "amount": 2.2090000000000003e-07,
+      "amount": 2.208e-07,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -385,7 +385,7 @@
       }
     },
     {
-      "amount": 0.00143282,
+      "amount": 0.001433,
       "defaultProvider": {
         "@type": "Process",
         "@id": "0aaf1e13-5d80-37f9-b7bb-81a6b8965c71"
@@ -413,7 +413,7 @@
       }
     },
     {
-      "amount": 3.8265699999999995e-06,
+      "amount": 3.83e-06,
       "description": "ECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -459,7 +459,7 @@
       }
     },
     {
-      "amount": 9.198e-07,
+      "amount": 9.2e-07,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -482,7 +482,7 @@
       }
     },
     {
-      "amount": 3.5369100000000002e-06,
+      "amount": 3.54e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -505,7 +505,7 @@
       }
     },
     {
-      "amount": 1.919e-07,
+      "amount": 1.923e-07,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -552,11 +552,11 @@
       }
     }
   ],
-  "lastChange": "2025-11-07T12:00:00Z",
+  "lastChange": "2025-11-08T12:00:00Z",
   "name": "Transport, chemical tanker, residual fuel oil powered, Eastern Canada to East Coast",
   "processDocumentation": {
     "completenessDescription": "To be added.\n",
-    "creationDate": "2025-11-07T12:00:00",
+    "creationDate": "2025-11-08T12:00:00",
     "dataCollectionDescription": "To be added.\n",
     "dataDocumentor": {
       "@type": "Actor",

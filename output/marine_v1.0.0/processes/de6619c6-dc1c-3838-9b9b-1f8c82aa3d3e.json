@@ -17,7 +17,7 @@
   },
   "exchanges": [
     {
-      "amount": 0.001383027,
+      "amount": 0.001384,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -40,7 +40,7 @@
       }
     },
     {
-      "amount": 0.0030470000000000002,
+      "amount": 0.003045,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -63,7 +63,7 @@
       }
     },
     {
-      "amount": 2.815711e-06,
+      "amount": 2.815e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -86,7 +86,7 @@
       }
     },
     {
-      "amount": 6.9109999999999996e-06,
+      "amount": 6.908e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -109,7 +109,7 @@
       }
     },
     {
-      "amount": 2.345551e-08,
+      "amount": 2.342e-08,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -132,7 +132,7 @@
       }
     },
     {
-      "amount": 5.8690000000000005e-08,
+      "amount": 5.868e-08,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -155,7 +155,7 @@
       }
     },
     {
-      "amount": 3.27943e-05,
+      "amount": 3.282e-05,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -178,7 +178,7 @@
       }
     },
     {
-      "amount": 7.219e-05,
+      "amount": 7.221e-05,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -201,7 +201,7 @@
       }
     },
     {
-      "amount": 7.95241e-08,
+      "amount": 7.948e-08,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -224,7 +224,7 @@
       }
     },
     {
-      "amount": 1.556e-07,
+      "amount": 1.554e-07,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -247,7 +247,7 @@
       }
     },
     {
-      "amount": 1.250686e-06,
+      "amount": 1.251e-06,
       "description": "ECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -270,7 +270,7 @@
       }
     },
     {
-      "amount": 1.5568999999999999e-07,
+      "amount": 1.556e-07,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -293,7 +293,7 @@
       }
     },
     {
-      "amount": 3.642e-06,
+      "amount": 3.64e-06,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -316,7 +316,7 @@
       }
     },
     {
-      "amount": 1.213561e-06,
+      "amount": 1.214e-06,
       "description": "ECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -339,7 +339,7 @@
       }
     },
     {
-      "amount": 1.5096e-07,
+      "amount": 1.509e-07,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -362,7 +362,7 @@
       }
     },
     {
-      "amount": 3.533e-06,
+      "amount": 3.53e-06,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -385,7 +385,7 @@
       }
     },
     {
-      "amount": 0.001471467,
+      "amount": 0.001471,
       "defaultProvider": {
         "@type": "Process",
         "@id": "0aaf1e13-5d80-37f9-b7bb-81a6b8965c71"
@@ -413,7 +413,7 @@
       }
     },
     {
-      "amount": 1.21234e-06,
+      "amount": 1.212e-06,
       "description": "ECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -436,7 +436,7 @@
       }
     },
     {
-      "amount": 6.2943e-07,
+      "amount": 6.287e-07,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -459,7 +459,7 @@
       }
     },
     {
-      "amount": 1.47e-05,
+      "amount": 1.471e-05,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -482,7 +482,7 @@
       }
     },
     {
-      "amount": 1.232948e-06,
+      "amount": 1.233e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -505,7 +505,7 @@
       }
     },
     {
-      "amount": 3.087e-06,
+      "amount": 3.09e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -552,11 +552,11 @@
       }
     }
   ],
-  "lastChange": "2025-11-07T12:00:00Z",
+  "lastChange": "2025-11-08T12:00:00Z",
   "name": "Transport, container ship, residual fuel oil powered, Atlantic of Central/South America to US Gulf",
   "processDocumentation": {
     "completenessDescription": "To be added.\n",
-    "creationDate": "2025-11-07T12:00:00",
+    "creationDate": "2025-11-08T12:00:00",
     "dataCollectionDescription": "To be added.\n",
     "dataDocumentor": {
       "@type": "Actor",

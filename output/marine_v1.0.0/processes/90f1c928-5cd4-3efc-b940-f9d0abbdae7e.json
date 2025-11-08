@@ -17,7 +17,7 @@
   },
   "exchanges": [
     {
-      "amount": 0.0005441863,
+      "amount": 0.0005449,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -40,7 +40,7 @@
       }
     },
     {
-      "amount": 0.003771,
+      "amount": 0.003768,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -63,7 +63,7 @@
       }
     },
     {
-      "amount": 1.1222162e-06,
+      "amount": 1.123e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -86,7 +86,7 @@
       }
     },
     {
-      "amount": 8.548999999999999e-06,
+      "amount": 8.549e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -109,7 +109,7 @@
       }
     },
     {
-      "amount": 9.361672000000001e-09,
+      "amount": 9.359e-09,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -132,7 +132,7 @@
       }
     },
     {
-      "amount": 7.26e-08,
+      "amount": 7.262e-08,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -155,7 +155,7 @@
       }
     },
     {
-      "amount": 1.2923723000000001e-05,
+      "amount": 1.292e-05,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -178,7 +178,7 @@
       }
     },
     {
-      "amount": 8.937e-05,
+      "amount": 8.936e-05,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -201,7 +201,7 @@
       }
     },
     {
-      "amount": 3.088366e-08,
+      "amount": 3.087e-08,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -247,7 +247,7 @@
       }
     },
     {
-      "amount": 5.100910000000001e-07,
+      "amount": 5.098e-07,
       "description": "ECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -270,7 +270,7 @@
       }
     },
     {
-      "amount": 4.07866e-08,
+      "amount": 4.072e-08,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -293,7 +293,7 @@
       }
     },
     {
-      "amount": 4.506e-06,
+      "amount": 4.505e-06,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -316,7 +316,7 @@
       }
     },
     {
-      "amount": 4.94364e-07,
+      "amount": 4.946e-07,
       "description": "ECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -339,7 +339,7 @@
       }
     },
     {
-      "amount": 3.95653e-08,
+      "amount": 3.949e-08,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -362,7 +362,7 @@
       }
     },
     {
-      "amount": 4.366e-06,
+      "amount": 4.369e-06,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -385,7 +385,7 @@
       }
     },
     {
-      "amount": 0.0014126516999999998,
+      "amount": 0.001413,
       "defaultProvider": {
         "@type": "Process",
         "@id": "0aaf1e13-5d80-37f9-b7bb-81a6b8965c71"
@@ -413,7 +413,7 @@
       }
     },
     {
-      "amount": 4.94342e-07,
+      "amount": 4.938e-07,
       "description": "ECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -436,7 +436,7 @@
       }
     },
     {
-      "amount": 1.64176e-07,
+      "amount": 1.645e-07,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -459,7 +459,7 @@
       }
     },
     {
-      "amount": 1.816e-05,
+      "amount": 1.82e-05,
       "description": "nonECA",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -482,7 +482,7 @@
       }
     },
     {
-      "amount": 4.925872e-07,
+      "amount": 4.928e-07,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -505,7 +505,7 @@
       }
     },
     {
-      "amount": 3.825e-06,
+      "amount": 3.824e-06,
       "description": "",
       "dqEntry": "(5;5;5;5;5)",
       "flow": {
@@ -552,11 +552,11 @@
       }
     }
   ],
-  "lastChange": "2025-11-07T12:00:00Z",
+  "lastChange": "2025-11-08T12:00:00Z",
   "name": "Transport, container ship, residual fuel oil powered, Asia to Hawaii",
   "processDocumentation": {
     "completenessDescription": "To be added.\n",
-    "creationDate": "2025-11-07T12:00:00",
+    "creationDate": "2025-11-08T12:00:00",
     "dataCollectionDescription": "To be added.\n",
     "dataDocumentor": {
       "@type": "Actor",

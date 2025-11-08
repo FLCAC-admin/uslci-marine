@@ -233,7 +233,10 @@ df = (df
 
 
 ## Assign specific contexts based on the leg
-## TODO: also consider locations?
+## TODO: also consider locations? Destination for anchorage, maneuv and hotel
+# should be assigned to US, while the origin should be assigned to foreign country?
+# Transit emissions are unassigned and/or GLO? May need to maintain dest/origin
+# designation which are dropped by now
 df = (df
       .assign(Context = lambda x: x.apply(
           lambda row: "/".join([row['Zone'], row['Leg']]), axis=1))
@@ -274,7 +277,6 @@ mapped_df = (mapped_df
                      (x['AvgOfDistance (nm)'] * NM_to_KM * x['Capacity (metric tons)']
                       * x['Utilization'].fillna(1)))
     )
-mapped_df['FlowAmount'] = mapped_df['FlowAmount'].apply(lambda x: round_to_sig_figs(x, 4))
 
 #%% Extract fuel information
 from flcac_utils.mapping import prepare_tech_flow_mappings
@@ -300,11 +302,10 @@ cond1 = df_olca['FlowName'] == 'reference_flow_var'
 cond2 = df_olca['FlowName'] == marine_inputs['EnergyFlow']
 
 df_olca = (df_olca
-           .assign(ProcessName = lambda x: ('Transport, '
-                                            + x['Ship Type'].str.lower() + ', '
-                                            + (x['Fuel'].str.lower())
-                                            + ' powered, ' + x['Global Region']
-                                            + ' to ' + x['US Region']))
+           .assign(ProcessName = lambda x: (
+               'Transport, ' + x['Ship Type'].str.lower() + ', '
+               + (x['Fuel'].str.lower()) + ' powered, ' + x['Global Region']
+               + ' to ' + x['US Region']))
            .assign(ProcessCategory = marine_inputs.get('ProcessContext'))
            .assign(ProcessID = lambda x: x['ProcessName'].apply(make_uuid))
            .assign(reference = np.where(cond1, True, False))
@@ -403,6 +404,7 @@ df_olca = (df_olca
            .agg('sum')
            .reset_index()
            )
+df_olca['amount'] = df_olca['amount'].apply(lambda x: round_to_sig_figs(x, 4))
 
 #%% prepare metadata
 from flcac_utils.generate_processes import build_location_dict
