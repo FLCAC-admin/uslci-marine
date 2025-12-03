@@ -302,13 +302,9 @@ cond1 = df_olca['FlowName'] == 'reference_flow_var'
 cond2 = df_olca['FlowName'] == marine_inputs['EnergyFlow']
 
 df_olca = (df_olca
-           # .assign(ProcessName = lambda x: (
-           #     'Transport; ' + x['Ship Type'].str.lower() + '; '
-           #     + (x['Fuel'].str.lower()) + ' powered; ' + x['Global Region']
-           #     + ' to ' + x['US Region']))
            .assign(ProcessName = lambda x: (
-               'Transport, ' + x['Ship Type'].str.lower() + ', '
-               + (x['Fuel'].str.lower()) + ' powered, ' + x['Global Region']
+               'Transport; ' + x['Ship Type'].str.lower() + '; '
+               + (x['Fuel'].str.lower()) + ' powered; ' + x['Global Region']
                + ' to ' + x['US Region']))
            .assign(ProcessCategory = marine_inputs.get('ProcessContext'))
            .assign(ProcessID = lambda x: x['ProcessName'].apply(make_uuid))
@@ -318,8 +314,7 @@ df_olca = (df_olca
                    'ELEMENTARY_FLOW'))
            .assign(Unit = np.where(cond1, 't*km', df_olca['Unit']))
            .assign(FlowName = lambda x: np.where(cond1,
-                   x['ProcessName'].str.rsplit(',', n=1).str.get(0),
-                   # x['ProcessName'].str.rsplit(';', n=1).str.get(0),
+                   x['ProcessName'].str.rsplit(';', n=1).str.get(0),
                    x['FlowName']))
            .assign(Context = np.where(cond1, marine_inputs['FlowContext'],
                    df_olca['Context']))
