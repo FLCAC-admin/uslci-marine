@@ -1,0 +1,24 @@
+{
+  "@type": "Flow",
+  "@id": "fb6da3b6-e4cc-3ddb-81bb-c3aecfcb74e7",
+  "cas": "108-88-3",
+  "category": "Elementary flows/emission/air/troposphere/rural",
+  "description": "From Federal Elementary Flow List v1.3.0, written by fedelemflowlist v1.3.1. Flow Class: Chemicals. Not a preferred flow.",
+  "flowProperties": [
+    {
+      "conversionFactor": 1.0,
+      "flowProperty": {
+        "@type": "FlowProperty",
+        "@id": "93a60a56-a3c8-11da-a746-0800200b9a66",
+        "name": "Mass"
+      },
+      "isRefFlowProperty": true
+    }
+  ],
+  "flowType": "ELEMENTARY_FLOW",
+  "formula": "C7H8",
+  "lastChange": "2025-12-03T09:10:44.345811",
+  "name": "Toluene",
+  "synonyms": "Benzene, methyl-",
+  "version": "1.3.0"
+}
