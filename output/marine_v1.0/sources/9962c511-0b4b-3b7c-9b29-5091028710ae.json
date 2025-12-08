@@ -1,0 +1,11 @@
+{
+  "@type": "Source",
+  "@id": "9962c511-0b4b-3b7c-9b29-5091028710ae",
+  "description": "U.S. Bureau of Transportation Statistics, Container Vessel Dwell Times, 2023",
+  "lastChange": "2025-12-08T12:00:00Z",
+  "name": "BTS (2023) Container Dwell Times",
+  "textReference": "",
+  "url": "https://data.bts.gov/stories/s/Container-Vessel-Dwell-Times/pbag-pyes/",
+  "version": "00.00.001",
+  "year": 2023
+}

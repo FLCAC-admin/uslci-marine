@@ -408,26 +408,42 @@ from flcac_utils.generate_processes import \
 validate_exchange_data(df_olca)
 
 processes = {}
-# loop through each vehicle type and region to adjust metadata before writing processes
-for s in df_olca['Ship Type'].unique():
-    _df_olca = df_olca.query('`Ship Type` == @s')
-    # vehicle_desc = process_meta['vehicle_descriptions'].get(
-    #     re.sub(r'[^a-zA-Z0-9]', '_', s.replace(',','')))
-    for f in _df_olca['Fuel'].unique():
-        _process_meta = process_meta.copy()
-        for k, v in _process_meta.items():
-            if not isinstance(v, str): continue
-            v = v.replace('[SHIP_TYPE]', s.title())
-            v = v.replace('[FUEL]', f)
-            _process_meta[k] = v
-        p_dict = build_process_dict(_df_olca.query('Fuel == @f'),
-                                    flows, meta=_process_meta,
-                                       # loc_objs=location_objs,
-                                       source_objs=source_objs,
-                                       actor_objs=actor_objs,
-                                       dq_objs=dq_objs,
-                                       )
-        processes.update(p_dict)
+# loop through each process to adjust metadata before writing processes
+for pid, chunk in df_olca.groupby('ProcessID'):
+    # Identify constant columns (all values same in this chunk)
+    meta = {
+        col: chunk[col].iloc[0] 
+        for col in chunk.columns 
+        if chunk[col].nunique() == 1
+    }
+    vessel_desc = process_meta['ship_description'].get(
+            re.sub(r'[^a-zA-Z0-9]', '_', meta['Ship Type'].replace(',','')).lower())
+    _process_meta = process_meta.copy()
+    _process_meta.pop('ship_description')
+    for k, v in _process_meta.items():
+        if not isinstance(v, str): continue
+        v = v.replace('[SHIP DESCRIPTION]', vessel_desc)
+        v = v.replace('[SHIP_TYPE]', meta['Ship Type'].title())
+        v = v.replace('[FUEL]', meta['Fuel'])
+        v = v.replace('[PORT]', meta['Global Region'])
+        v = v.replace('[DESTINATION]', meta['US Region'])
+        v = v.replace('[Capacity (metric tons)]', str(meta['Capacity (metric tons)']))
+        v = v.replace('[Subtype]', meta['Subtype'])
+        v = v.replace('[Utilization]', str(meta['Utilization']*100))
+        v = v.replace('[ANCH_TIME]', str(ANCH_TIME*100))
+        v = v.replace('[ORIGIN_MANEUV_SPEED]', str(ORIGIN_MANEUV_SPEED))
+        v = v.replace('[DEST_MANEUV_SPEED]', str(DEST_MANEUV_SPEED))
+        v = v.replace('[SM_COASTAL]', str(SM_COASTAL))
+        v = v.replace('[SM_OPEN]', str(SM_OPEN))
+        _process_meta[k] = v
+    p_dict = build_process_dict(chunk,
+                                flows, meta=_process_meta,
+                                # loc_objs=location_objs,
+                                source_objs=source_objs,
+                                actor_objs=actor_objs,
+                                dq_objs=dq_objs,
+                                )
+    processes.update(p_dict)
 # build bridge processes
 bridge_processes = build_process_dict(df_bridge, flows, meta=marine_inputs['Bridge'])
 

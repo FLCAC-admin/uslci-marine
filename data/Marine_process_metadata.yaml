@@ -5,49 +5,107 @@ description: >
     [FUEL] as a fuel source.
     The reference flow is the movement of 1 metric ton of goods for a distance
     of 1 km.
+    Emissions account for vessel activity during transit, maneuvering, hotelling,
+    and anchorage.
 
 # valid_until: 2023 # Assigned in code
 # valid_from: 2023 # Assigned in code
 
 time_description: >
-    This process reflects the vehicle fleet as estimated in [YEAR]. 
+    This process reflects the marine fleet as estimated in [YEAR] based on vessel Entrance
+    and Clearance data for U.S. ports for that year.
 
 geography_description: >
-    This process assumes an average emissions rate based on a route from XX to YY.
+    This process assumes an average emissions rate based on a route from [PORT] to [DESTINATION].
     The route is also used to estimate the portion of emissions that occur within
     an Emissions Control Area (ECA), where reduced emissions are required. 
     Note no location object is assigned as emissions are primarily occuring in 
     open waters.
 
 technology_description: >
-    [SHIP DESCRIPTION]
+    [SHIP DESCRIPTION] This type is modeled as [Subtype] with a capacity of
+    [Capacity (metric tons)] metric tons and an assumed utilization of [Utilization]%.
+    Vessel characteristics are sourced from EPA Ports Emissions Inventory Guidance,
+    Appendix C (USEPA 2022).
+
+ship_description:
+    # See Table 3.1 of EPA 2022
+    chemical_tanker: >
+        [SHIP_TYPE]s are liquid-cargo vessels that transport chemicals in bulk.
+
+    container_ship: >
+        [SHIP_TYPE]s are dry-cargo vessels that carry containerized cargo.
 
 ## LCI method
 
 inventory_method_description: >
-    Not applicable.
+    Attributional process.
 
 modeling_constants_description: >
-    Not applicable.
+    Engine kW ratings for propulsion, auxiliary and boilers were obtained from the EPA 
+    Ports Emisisons Inventory Guidance (USEPA 2022). For the auxiliary and boilers,
+    the kW already took into account the load factor. For the propulsion a load
+    factor was calculated using the well-known Propeller Law (see Equation 3.6 in
+    USEPA 2022). The Propeller Law takes into account the sea margin, which is an
+    efficiency factor of between [SM_COASTAL] and [SM_OPEN] for weather conditions.
+    However, at lower speeds, where the load is 20% or less, emissions are increased
+    due to inefficiencies. These factors were also obtained from EPA (USEPA 2022). 
+    For these calculations we used the adjustment for load factors <=2%.
 
 ## Data Source information
 
 completeness_description: >
-    To be added.
+    HAP speciation profiles from (see USEPA 2022 Appendix D) are applied to VOC
+    and PM emission factors.
 
 data_selection_description: >
-    To be added.
+    ''
 
 data_treatment_description: >
-    To be added.
+    Regional distances were calculated using averages distances for the routes
+    using shipping lanes between the more visited ports based on the Entrance
+    and Clearance data for [YEAR] (USACE 2023). The shipping lanes were from the
+    Global Shipping Routes from ArcGIS which were originally generated from shipping
+    lane vectors from the Map of the World Oceans. This analysis provided the typical
+    transit distance and percentages in ECA zones.
+
+    The average vessel speeds for the typical vessels are used to calculate the
+    transit time by dividing the distance by speed. The average speed is calculated
+    based on the mode of transit speed ratios multiplied by the max speed (USEPA 2022).
+
+    The time for the port, maneuvering, and anchorage times also need to be estimated.
+    The international port times were derived from data from median time spent in
+    port by container ships worldwide in 2021, by country. The US dwell times were
+    based on a US average from 2022 of 34.6 hours for container ships and 41 hours
+    for tankers (BTS 2023). 
+
+    Maneuvering time was estimated based on the distance a ship travels from the
+    breakwater to the pier/wharf/dock (PWD). Average maneuvering speeds range
+    between 3 to 8 knots. Outbound speeds are usually faster since the ship does
+    not need to dock (Browning 2006). Because of this we assumed a speed of 
+    [DEST_MANEUV_SPEED] inbound and [ORIGIN_MANEUV_SPEED] for the outbound speed.
+    The distance was measured from the innermost point of the port to the coastline
+    plus 0.5 miles for the breakwater. These distances were averaged by the US
+    region and global regions. 
+
+    The anchorage time was assumed to be [ANCH_TIME]% of the total transit time. This is
+    based on averaging the average percentage time of anchorage from AIS tracking,
+    which ranges from 4% to 9%.
+
 
 sampling_description: >
-    To be added.
+    Representative routes from various global regions were selected based on the most
+    frequent vessel activity.
 
 data_collection_description: >
-    To be added.
+    Data were modeled in 2025.
 
 use_advice: >
+    Select routes are provided from various global regions to the United States.
+    The choice of route primarily impacts the share of the emissions that occur
+    during transit relative to near-shore emissions during maneuvering, hotelling,
+    and anchorage. These processes are generally applicable to outgoing transit
+    as well.
     This process is intended to connect to fuel supply processes in the USLCI.
 
 # reviews:
@@ -59,9 +117,12 @@ use_advice: >
 #       Review provided by NREL third-party; documentation and response
 #       documented in attached source.
 
-# sources:
-#  - usepa_motor_2024: USEPA (2024) MOVES4
-#  - fhwa_research_2020: FHWA (2020) Freight Analysis Framework
+sources:
+ - guidance2022methodologies: USEPA (2022) Port Emissions Inventory Guidance
+ - browning2006current: Browning (2006)
+ - usace_vessel_2023: USACE (2023) Vessel Entrances and Clearances
+ - us_bts_container_nodate: BTS (2023) Container Dwell Times
+ - us_bts_tanker_nodate: BTS (2023) Tanker Dwell Times
 
 ## Admin information
 
