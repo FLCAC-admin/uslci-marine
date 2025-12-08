@@ -10,7 +10,7 @@ from pathlib import Path
 from statistics import mean
 import re
 
-auth = True
+auth = False
 parent_path = Path(__file__).parent
 data_path =  parent_path / 'data'
 
@@ -326,7 +326,7 @@ df_olca = (df_olca
            )
 
 #%% Apply fuel mapping data
-from flcac_utils.mapping import apply_tech_flow_mapping
+from flcac_utils.mapping import apply_tech_flow_mapping, create_bridge_processes
 
 df_olca = apply_tech_flow_mapping(df_olca.rename(columns={'FlowName':'name',
                                                           'FlowAmount':'amount',
@@ -343,7 +343,7 @@ df_olca = (df_olca
            .query('not(FlowUUID.isna())')
            .drop(columns=['bridge'], errors='ignore')
            )
-df_bridge = pd.DataFrame()
+df_bridge = create_bridge_processes(df_olca, fuel_dict, flow_objs)
 # df_olca.to_csv(parent_path /'marine_processed_output.csv', index=False)
 
 from flcac_utils.generate_processes import build_flow_dict
@@ -445,4 +445,4 @@ from flcac_utils.util import extract_latest_zip
 
 extract_latest_zip(out_path,
                    parent_path,
-                   output_folder_name = Path('output') / 'marine_v1.0.0')
+                   output_folder_name = Path('output') / 'marine_v1.0')
