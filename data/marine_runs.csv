@@ -1,12 +1,12 @@
 ﻿US Region,Global Region,Fuel,Ship Type,Subtype
-East Coast,Africa,Residual fuel oil,Container Ship,"5,000 TEU"
-East Coast,Asia,Residual fuel oil,Container Ship,"5,000 TEU"
-East Coast,Atlantic of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
-East Coast,Bermuda,Residual fuel oil,Container Ship,"5,000 TEU"
-East Coast,Caribbean,Residual fuel oil,Container Ship,"5,000 TEU"
-East Coast,Eastern Canada,Residual fuel oil,Container Ship,"5,000 TEU"
-East Coast,Europe,Residual fuel oil,Container Ship,"5,000 TEU"
-East Coast,Pacific of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
+US East Coast,Africa,Residual fuel oil,Container Ship,"5,000 TEU"
+US East Coast,Asia,Residual fuel oil,Container Ship,"5,000 TEU"
+US East Coast,Atlantic of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
+US East Coast,Bermuda,Residual fuel oil,Container Ship,"5,000 TEU"
+US East Coast,Caribbean,Residual fuel oil,Container Ship,"5,000 TEU"
+US East Coast,Eastern Canada,Residual fuel oil,Container Ship,"5,000 TEU"
+US East Coast,Europe,Residual fuel oil,Container Ship,"5,000 TEU"
+US East Coast,Pacific of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
 Hawaii,Asia,Residual fuel oil,Container Ship,"5,000 TEU"
 US Caribbean,Atlantic of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
 US Caribbean,Caribbean,Residual fuel oil,Container Ship,"5,000 TEU"
@@ -18,18 +18,18 @@ US Gulf,Atlantic of Central/South America,Residual fuel oil,Container Ship,"5,00
 US Gulf,Caribbean,Residual fuel oil,Container Ship,"5,000 TEU"
 US Gulf,Gulf of Mexico,Residual fuel oil,Container Ship,"5,000 TEU"
 US Gulf,Pacific of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
-West Coast,Asia,Residual fuel oil,Container Ship,"5,000 TEU"
-West Coast,Pacific of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
-West Coast,Western Canada,Residual fuel oil,Container Ship,"5,000 TEU"
-West Coast,Western Mexico,Residual fuel oil,Container Ship,"5,000 TEU"
-East Coast,Africa,Residual fuel oil,Chemical Tanker,Handymax
-East Coast,Asia,Residual fuel oil,Chemical Tanker,Handymax
-East Coast,Atlantic of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
-East Coast,Bermuda,Residual fuel oil,Chemical Tanker,Handymax
-East Coast,Caribbean,Residual fuel oil,Chemical Tanker,Handymax
-East Coast,Eastern Canada,Residual fuel oil,Chemical Tanker,Handymax
-East Coast,Europe,Residual fuel oil,Chemical Tanker,Handymax
-East Coast,Pacific of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
+US West Coast,Asia,Residual fuel oil,Container Ship,"5,000 TEU"
+US West Coast,Pacific of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
+US West Coast,Western Canada,Residual fuel oil,Container Ship,"5,000 TEU"
+US West Coast,Western Mexico,Residual fuel oil,Container Ship,"5,000 TEU"
+US East Coast,Africa,Residual fuel oil,Chemical Tanker,Handymax
+US East Coast,Asia,Residual fuel oil,Chemical Tanker,Handymax
+US East Coast,Atlantic of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
+US East Coast,Bermuda,Residual fuel oil,Chemical Tanker,Handymax
+US East Coast,Caribbean,Residual fuel oil,Chemical Tanker,Handymax
+US East Coast,Eastern Canada,Residual fuel oil,Chemical Tanker,Handymax
+US East Coast,Europe,Residual fuel oil,Chemical Tanker,Handymax
+US East Coast,Pacific of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
 Hawaii,Asia,Residual fuel oil,Chemical Tanker,Handymax
 US Caribbean,Atlantic of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
 US Caribbean,Caribbean,Residual fuel oil,Chemical Tanker,Handymax
@@ -41,7 +41,7 @@ US Gulf,Atlantic of Central/South America,Residual fuel oil,Chemical Tanker,Hand
 US Gulf,Caribbean,Residual fuel oil,Chemical Tanker,Handymax
 US Gulf,Gulf of Mexico,Residual fuel oil,Chemical Tanker,Handymax
 US Gulf,Pacific of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
-West Coast,Asia,Residual fuel oil,Chemical Tanker,Handymax
-West Coast,Pacific of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
-West Coast,Western Canada,Residual fuel oil,Chemical Tanker,Handymax
-West Coast,Western Mexico,Residual fuel oil,Chemical Tanker,Handymax
+US West Coast,Asia,Residual fuel oil,Chemical Tanker,Handymax
+US West Coast,Pacific of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
+US West Coast,Western Canada,Residual fuel oil,Chemical Tanker,Handymax
+US West Coast,Western Mexico,Residual fuel oil,Chemical Tanker,Handymax

@@ -3,8 +3,8 @@
 description: >
     This dataset represents the movement of goods via a [SHIP_TYPE] using
     [FUEL] as a fuel source.
-    The reference flow is the movement of 1 metric ton of goods for a distance
-    of 1 km.
+    The reference flow is the movement of a unit of mass of goods (e.g., 1 kg)
+    across a distance (e.g., 1 km).
     Emissions account for vessel activity during transit, maneuvering, hotelling,
     and anchorage.
 
@@ -108,14 +108,12 @@ use_advice: >
     as well.
     This process is intended to connect to fuel supply processes in the USLCI.
 
-# reviews:
-#  1:
-#     reviewType: 'Independent external review'
-#     report:
-#       flcac_moves_onroad: 'ERG (2025) MOVES onroad v1.0'
-#     details: >
-#       Review provided by NREL third-party; documentation and response
-#       documented in attached source.
+reviews:
+ 1:
+    reviewType: 'Dependent internal review'
+    details: >
+        ERG internally reviewed the underlying assumptions and operations to
+        generate the datasets and the metadata.
 
 sources:
  - guidance2022methodologies: USEPA (2022) Port Emissions Inventory Guidance
@@ -133,8 +131,13 @@ project_description: >
     No. DE-AC36-08GO28308. The work is funded by DOE's Advanced Materials &
     Manufacturing Technologies Office (AMMTO).
 
-# intended_application: >
-#     This is intended application.
+intended_application: >
+    Situation C1 - Accounting, with system-external interactions - The intended
+    application is a purely descriptive accounting / documentation of the analyzed
+    system including existing interactions with other systems in the LCI model.
+    The target audience of this model includes LCA practitioners, industry, and
+    the general public. A full inventory of environmental flows are included;
+    thus this unit process can be used for a full range of LCIA impact categories.
 
 # data_set_owner: 
 #     USLCI: 'ERG'

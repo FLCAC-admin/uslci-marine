@@ -1,12 +1,12 @@
 ﻿US Region,Global Region,AvgOfDistance (nm),AvgPctECA,DestManeuv_Distance,OrigManeuv_Distance
-East Coast,Africa,7179,0.044,2.888,14.75
-East Coast,Asia,10109,0.024,2.508,14.75
-East Coast,Atlantic of Central/South America,1094,0.035,12.695,1.727
-East Coast,Bermuda,697,0.344,0.979,14.75
-East Coast,Caribbean,847,0.193,2.412,4.574
-East Coast,Eastern Canada,593,0.937,6.477,14.75
-East Coast,Europe,3230,0.231,7.811,14.429
-East Coast,Pacific of Central/South America,1928,0.099,0.533,2.741
+US East Coast,Africa,7179,0.044,2.888,14.75
+US East Coast,Asia,10109,0.024,2.508,14.75
+US East Coast,Atlantic of Central/South America,1094,0.035,12.695,1.727
+US East Coast,Bermuda,697,0.344,0.979,14.75
+US East Coast,Caribbean,847,0.193,2.412,4.574
+US East Coast,Eastern Canada,593,0.937,6.477,14.75
+US East Coast,Europe,3230,0.231,7.811,14.429
+US East Coast,Pacific of Central/South America,1928,0.099,0.533,2.741
 Hawaii,Asia,3333,0.1,3.352,0.803
 US Caribbean,Atlantic of Central/South America,2950,0.07,3.614,5.867
 US Caribbean,Caribbean,206,0.099,0.827,5.867
@@ -18,7 +18,7 @@ US Gulf,Atlantic of Central/South America,1048,0.252,1.919,7.227
 US Gulf,Caribbean,1225,0.395,1.128,25.322
 US Gulf,Gulf of Mexico,516,0.446,7.657,25.322
 US Gulf,Pacific of Central/South America,930,0.126,0.533,1.478
-West Coast,Asia,5680,0.012,7.633,3.874
-West Coast,Pacific of Central/South America,2039,0.038,0.533,2.968
-West Coast,Western Canada,136,0.979,4.722,5.339
-West Coast,Western Mexico,1643,0.057,0.917,3.344
+US West Coast,Asia,5680,0.012,7.633,3.874
+US West Coast,Pacific of Central/South America,2039,0.038,0.533,2.968
+US West Coast,Western Canada,136,0.979,4.722,5.339
+US West Coast,Western Mexico,1643,0.057,0.917,3.344

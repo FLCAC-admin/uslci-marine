@@ -303,7 +303,7 @@ cond2 = df_olca['FlowName'] == marine_inputs['EnergyFlow']
 
 df_olca = (df_olca
            .assign(ProcessName = lambda x: (
-               'Transport; ' + x['Ship Type'].str.lower() + '; '
+               'Transport, ' + x['Ship Type'].str.lower() + '; '
                + (x['Fuel'].str.lower()) + ' powered; ' + x['Global Region']
                + ' to ' + x['US Region']))
            .assign(ProcessCategory = marine_inputs.get('ProcessContext'))
@@ -435,6 +435,7 @@ for pid, chunk in df_olca.groupby('ProcessID'):
         v = v.replace('[DEST_MANEUV_SPEED]', str(DEST_MANEUV_SPEED))
         v = v.replace('[SM_COASTAL]', str(SM_COASTAL))
         v = v.replace('[SM_OPEN]', str(SM_OPEN))
+        v = v.replace('[YEAR]', str(marine_inputs['Year']))
         _process_meta[k] = v
     p_dict = build_process_dict(chunk,
                                 flows, meta=_process_meta,
