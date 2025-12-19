@@ -13,64 +13,61 @@ DQI:
 
   Process:
     Process review:
-      score: 5
+      score: 4
       description: > 
-        TO BE ADDED
+        Internal ERG review
     
     Process completeness:
-      score: 1
-      description: TO BE ADDED
+      score: 2
+      description: >
+        Expected to included all relevant emissions to air but only 
+        tracks fuel use and combustion emissions, not all flows.
 
     # # EPA DQI category
     # Range data completeness:
     #   score: 5
-    #   description: TO BE ADDED
+    #   description: No range data provided for flows
 
     # # EPA DQA Data Attributes
     # Reproducibility:
-    #   score: 5
+    #   score: 2
     #   description: >
-    #     TO BE ADDED
+    #     Code and calculations are fully transparent. Requires some input assumptions
+    #     and data from datasets that may not be fully/easily accessible.
 
     # Free to use:
-    #   score: 5
-    #   description: TO BE ADDED
+    #   score: 1
+    #   description: Fully available
 
     # Interoperable:
-    #   score: 5
-    #   description: >
-    #     TO BE ADDED 
+    #   score: 1
+    #   description: Fully interoperable
 
     # Maintained:
-    #   score: 5
-    #   description: TO BE ADDED
+    #   score: 4
+    #   description: Maintainence schedule is depenent upon updated emissions data
 
   Flow:
     Flow reliability:
-      score: 5
+      score: 2 # increase to 3 for fuels and secondary emissions
       description: >
         TO BE ADDED
 
     Temporal correlation:
-      score: 5
+      score: 3 # increase to 4 for secondary emissions
       description: TO BE ADDED
 
     Geographical correlation:
-      score: 5
+      score: 2
       description: >
         TO BE ADDED
 
     Technological correlation:
-      score: 5
+      score: 2
       description: >
         TO BE ADDED
 
     Data collection methods:
-      score: 5
+      score: 1
       description: >
         TO BE ADDED
-Bridge:
-  description: >
-    This process links an input in a USLCI process to a provider from the
-    [REPO] repository on the Federal LCA Commons. The intended provider for
-    this process is "[PROVIDER]". Conversion to mass are based on XXXXXX.

@@ -3,8 +3,8 @@
   "@id": "5d5f0dc3-a9a8-3740-8321-e964ef96a3ce",
   "category": "48-49: Transportation and Warehousing / 4831: Deep Sea, Coastal, and Great Lakes Water Transportation",
   "defaultAllocationMethod": "PHYSICAL_ALLOCATION",
-  "description": "This dataset represents the movement of goods via a Chemical Tanker using Residual fuel oil as a fuel source. The reference flow is the movement of a unit of mass of goods (e.g., 1 kg) across a distance (e.g., 1 km). Emissions account for vessel activity during transit, maneuvering, hotelling, and anchorage.\n",
-  "dqEntry": "(5;1)",
+  "description": "This dataset represents the movement of goods via a Chemical Tanker using Residual fuel oil as a fuel source. The reference flow is the movement of a unit of mass of goods (e.g., 1 kg) across a distance (e.g., 1 km). Emissions account for vessel activity during transit, maneuvering, hotelling, and anchorage.",
+  "dqEntry": "(4;2)",
   "dqSystem": {
     "@type": "DQSystem",
     "@id": "70bf370f-9912-4ec1-baa3-fbd4eaf85a10",
@@ -19,7 +19,7 @@
     {
       "amount": 1.235e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "457411b2-4dac-3eb2-965d-97b60660afa2",
@@ -42,7 +42,7 @@
     {
       "amount": 3.382e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "b9f2a8bf-6ae0-30cc-9911-a30ae88d45e2",
@@ -65,7 +65,7 @@
     {
       "amount": 8.683e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "3b981d82-2f3d-3ac0-89b5-5e38b91ef0f3",
@@ -88,7 +88,7 @@
     {
       "amount": 2.377e-08,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "89fb9a82-5acb-3abe-ad22-9cbd977fbc73",
@@ -111,7 +111,7 @@
     {
       "amount": 6.207e-12,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "43aed9d7-5a9b-3f3e-8d51-cc8bebd9a9a1",
@@ -134,7 +134,7 @@
     {
       "amount": 1.699e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "f117b6e6-7e3d-3470-90b8-36f171ad4c14",
@@ -157,7 +157,7 @@
     {
       "amount": 1.439e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "34b07e52-3833-3665-aeec-01aed3f78362",
@@ -180,7 +180,7 @@
     {
       "amount": 3.939e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "57e29206-ea24-305e-b362-b9f9d82b02fe",
@@ -203,7 +203,7 @@
     {
       "amount": 1.193e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "09dc3fe9-7e57-321f-9e04-34375bf2a0b7",
@@ -226,7 +226,7 @@
     {
       "amount": 3.266e-08,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "f1cdcdc8-5284-3d7c-8d2e-679484c3a06d",
@@ -249,7 +249,7 @@
     {
       "amount": 2.254e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "ba9cee15-a144-3c38-9a3b-36931d4e64e9",
@@ -272,7 +272,7 @@
     {
       "amount": 6.169e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "30f8d7d6-9da9-3751-b334-b0f0e6fc61e1",
@@ -295,7 +295,7 @@
     {
       "amount": 7.309e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "65b5d5dd-95b5-36b2-8cb0-7c5501ff1e32",
@@ -318,7 +318,7 @@
     {
       "amount": 1.354e-07,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "854dd1a0-00d8-3f1c-a134-26f136cd3fd7",
@@ -341,7 +341,7 @@
     {
       "amount": 4.195e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "5aaca76f-ed8b-3dc6-9cb3-597421c567ac",
@@ -364,7 +364,7 @@
     {
       "amount": 1.148e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "c8c2848a-7ede-3387-908f-449537e7d3d7",
@@ -387,7 +387,7 @@
     {
       "amount": 2.336e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "9de688f4-2302-3557-b50c-0f1d304977f4",
@@ -410,7 +410,7 @@
     {
       "amount": 4.327e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "2748fe77-0836-31cb-a501-4aea92e442c2",
@@ -433,7 +433,7 @@
     {
       "amount": 9.836e-12,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "2b16d0b5-4713-3bb8-be5b-905382f0e8a8",
@@ -456,7 +456,7 @@
     {
       "amount": 1.822e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "effbc487-93c7-3ccf-a159-b04751942990",
@@ -479,7 +479,7 @@
     {
       "amount": 3.35e-12,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "248c35a7-7964-3f7b-aff8-9f29e983835e",
@@ -502,7 +502,7 @@
     {
       "amount": 6.205e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "6432e695-97e1-3827-bf7a-fff75a492c81",
@@ -525,7 +525,7 @@
     {
       "amount": 5.779e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "565c5d1a-1e0e-35f3-82a0-4845c43d3dcf",
@@ -548,7 +548,7 @@
     {
       "amount": 1.582e-08,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "353e6910-49e1-37f0-9714-be46e80c66b7",
@@ -571,7 +571,7 @@
     {
       "amount": 1.587e-12,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "76bd7eb9-a592-319f-9234-9a469de5bd59",
@@ -594,7 +594,7 @@
     {
       "amount": 2.941e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "79da28cb-b699-371d-8134-02c6449db33d",
@@ -617,7 +617,7 @@
     {
       "amount": 1.587e-12,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "fcf65d36-ae15-3066-80c2-b624e04c6380",
@@ -640,7 +640,7 @@
     {
       "amount": 2.941e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "3d2687c2-4203-3421-bcc9-4e25a3f7aaf8",
@@ -663,7 +663,7 @@
     {
       "amount": 8.962e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "d5a296be-7219-3921-a430-cff172ac7911",
@@ -686,7 +686,7 @@
     {
       "amount": 1.66e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "003bd1b3-a6c3-3492-993e-86b96d10ba18",
@@ -709,7 +709,7 @@
     {
       "amount": 0.0001785,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "b6f010fb-a764-3063-af2d-bcb8309a97b7",
@@ -732,7 +732,7 @@
     {
       "amount": 0.003307,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "457679e0-817e-3175-b6db-6d18eef2c392",
@@ -755,7 +755,7 @@
     {
       "amount": 2.997e-07,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "187c525c-3715-388c-b303-a0671524a615",
@@ -778,7 +778,7 @@
     {
       "amount": 7.477e-06,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "3fb21335-87be-3726-b31a-8fc9e98ad9cc",
@@ -801,7 +801,7 @@
     {
       "amount": 6.19e-12,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "993fb955-f686-37f7-96e1-22b8c2a35ced",
@@ -824,7 +824,7 @@
     {
       "amount": 1.147e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "acc3a829-8bfd-353d-b473-9b0e6142319d",
@@ -847,7 +847,7 @@
     {
       "amount": 3.406e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "c89c263a-b0b7-34c9-a27c-d9ebf851c3cc",
@@ -870,7 +870,7 @@
     {
       "amount": 6.311e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "17bb55e6-4c9b-3f10-91e7-c6a7a7d4f32b",
@@ -893,7 +893,7 @@
     {
       "amount": 2e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "c5697dcb-8fd3-3046-b499-f34e33495b61",
@@ -916,7 +916,7 @@
     {
       "amount": 5.475e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "4a2f56fb-26e7-3c1b-a285-b69fff2f8a28",
@@ -939,7 +939,7 @@
     {
       "amount": 5.207e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "a257b8d3-62dd-37ad-b429-73d96c97165c",
@@ -962,7 +962,7 @@
     {
       "amount": 1.425e-07,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "0c211409-f2c9-3e5b-b633-3f08ee3ebc77",
@@ -985,7 +985,7 @@
     {
       "amount": 3.402e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "7955b6e2-3ae6-315c-94f1-028d7faada34",
@@ -1008,7 +1008,7 @@
     {
       "amount": 9.313e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "1eac3717-bbc9-35cb-b6f2-07913e7de28b",
@@ -1031,7 +1031,7 @@
     {
       "amount": 4.747e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "fe829136-3042-36e6-b4cb-7ff591e8db98",
@@ -1054,7 +1054,7 @@
     {
       "amount": 8.795e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "9be74814-f4f5-3ce3-9222-adf1b675d9ee",
@@ -1077,7 +1077,7 @@
     {
       "amount": 1.223e-12,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "9a474c27-63f9-3d0d-a74c-465fd97400e7",
@@ -1100,7 +1100,7 @@
     {
       "amount": 2.265e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "2973ed1d-cca1-3e32-b7cc-895153bf0ba2",
@@ -1123,7 +1123,7 @@
     {
       "amount": 1.587e-14,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "e2c65e04-f613-33db-9a6e-4cb4577b0005",
@@ -1146,7 +1146,7 @@
     {
       "amount": 2.941e-13,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "9874f7d3-cf12-3f20-ad53-4369a9c257a7",
@@ -1169,7 +1169,7 @@
     {
       "amount": 2.317e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "aab83476-ec6c-3742-af85-15d320b7ce80",
@@ -1192,7 +1192,7 @@
     {
       "amount": 6.339e-08,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "a81e5ff3-ddea-3521-854e-3d0ec0912182",
@@ -1215,7 +1215,7 @@
     {
       "amount": 3.817e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "ebf3aeb4-7a46-3029-a8f8-83d68f4d4ce5",
@@ -1238,7 +1238,7 @@
     {
       "amount": 1.045e-07,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "56628357-a6eb-3c15-a8ef-e5f12bd863e1",
@@ -1261,7 +1261,7 @@
     {
       "amount": 2.609e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "50f56ea3-e292-3c09-89d2-74466af5f11e",
@@ -1284,7 +1284,7 @@
     {
       "amount": 4.833e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "1dbe84d3-098e-39e4-bb48-4a6bcb85825c",
@@ -1307,7 +1307,7 @@
     {
       "amount": 4.233e-06,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "4382ba18-dd21-3837-80b2-94283ef5490e",
@@ -1330,7 +1330,7 @@
     {
       "amount": 7.842e-05,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "887419d2-a15b-3b0e-beb1-d0f98002952f",
@@ -1353,7 +1353,7 @@
     {
       "amount": 1.14e-08,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "cfee0524-7ad6-300b-b050-6249135a2492",
@@ -1376,7 +1376,7 @@
     {
       "amount": 1.688e-07,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "cc3f5214-382f-3bfd-8a4b-f1cae05306a6",
@@ -1399,7 +1399,7 @@
     {
       "amount": 1.438e-07,
       "description": "ECA",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "5a939c2b-cebf-3060-8862-4a8650caf6dd",
@@ -1422,7 +1422,7 @@
     {
       "amount": 4.107e-08,
       "description": "nonECA",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "5a939c2b-cebf-3060-8862-4a8650caf6dd",
@@ -1445,7 +1445,7 @@
     {
       "amount": 3.953e-06,
       "description": "nonECA",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "e3e3e95b-0d76-3089-bd1f-aa577a3d986a",
@@ -1468,7 +1468,7 @@
     {
       "amount": 1.396e-07,
       "description": "ECA",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "49a9c581-7c83-36b0-b1bd-455ea4c665a6",
@@ -1491,7 +1491,7 @@
     {
       "amount": 3.982e-08,
       "description": "nonECA",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "49a9c581-7c83-36b0-b1bd-455ea4c665a6",
@@ -1514,7 +1514,7 @@
     {
       "amount": 3.834e-06,
       "description": "nonECA",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "8408f919-e260-348e-bf46-cf1b50d50e5e",
@@ -1537,7 +1537,7 @@
     {
       "amount": 1.654e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "12ae4a71-1402-36e9-ada8-fe6cb98c56ee",
@@ -1560,7 +1560,7 @@
     {
       "amount": 4.527e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "b0a295ea-2d1c-3e9c-9cee-74186ce5d6b5",
@@ -1583,7 +1583,7 @@
     {
       "amount": 1.587e-13,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "18819e98-6dd1-3a8f-a27a-67ca826f3381",
@@ -1606,7 +1606,7 @@
     {
       "amount": 2.941e-12,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "00db6760-08c5-36ef-a22a-3e49612e9e91",
@@ -1629,7 +1629,7 @@
     {
       "amount": 1.85e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "592fa548-20aa-36e9-b703-68be0ff6f30a",
@@ -1652,7 +1652,7 @@
     {
       "amount": 5.064e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "47e75500-f3d8-3a38-b22d-7f872651fa13",
@@ -1675,7 +1675,7 @@
     {
       "amount": 1.28e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "b51b5cbd-b0cb-3104-b03b-4fbc12829a9e",
@@ -1698,7 +1698,7 @@
     {
       "amount": 2.371e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "1284817f-1c26-3b0a-9a59-640bf10e09db",
@@ -1725,7 +1725,7 @@
         "@id": "0aaf1e13-5d80-37f9-b7bb-81a6b8965c71"
       },
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "f7c00d19-9601-373a-ba23-593e251b4dee",
@@ -1749,7 +1749,7 @@
     {
       "amount": 1.663e-14,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "b6db14bd-73e9-3f02-852a-e8b5e60bbc61",
@@ -1772,7 +1772,7 @@
     {
       "amount": 3.082e-13,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "0dce3988-fcba-32fc-a8d0-4fd2b8b8794d",
@@ -1795,7 +1795,7 @@
     {
       "amount": 1.393e-07,
       "description": "ECA",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "f4973035-59f5-3bdc-b257-b274dcc04e0f",
@@ -1818,7 +1818,7 @@
     {
       "amount": 1.659e-07,
       "description": "nonECA",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "f4973035-59f5-3bdc-b257-b274dcc04e0f",
@@ -1841,7 +1841,7 @@
     {
       "amount": 1.597e-05,
       "description": "nonECA",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "e2028a0c-2feb-33a5-965f-fa7113b66bad",
@@ -1864,7 +1864,7 @@
     {
       "amount": 2.482e-10,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "3f72fe9c-b003-38ee-b8d2-13a84f60506c",
@@ -1887,7 +1887,7 @@
     {
       "amount": 6.793e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "fb6da3b6-e4cc-3ddb-81bb-c3aecfcb74e7",
@@ -1910,7 +1910,7 @@
     {
       "amount": 1.219e-07,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "6f861846-1c4c-3fc9-a198-56b2d9abd83b",
@@ -1933,7 +1933,7 @@
     {
       "amount": 3.338e-06,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(2;3;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "d6a91d9b-ff6e-3ee7-85d9-5d871937e7b9",
@@ -1956,7 +1956,7 @@
     {
       "amount": 6.256e-11,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "e99ddeb5-25be-3571-9b7a-2668d9531e8a",
@@ -1979,7 +1979,7 @@
     {
       "amount": 1.712e-09,
       "description": "",
-      "dqEntry": "(5;5;5;5;5)",
+      "dqEntry": "(3;4;2;2;1)",
       "flow": {
         "@type": "Flow",
         "@id": "9265a9e4-49c1-3fe1-8fa1-96123bd4f4af",
@@ -2024,12 +2024,12 @@
       }
     }
   ],
-  "lastChange": "2025-12-10T12:00:00Z",
+  "lastChange": "2025-12-19T12:00:00Z",
   "name": "Transport, chemical tanker; residual fuel oil powered; Asia to US West Coast",
   "processDocumentation": {
-    "completenessDescription": "HAP speciation profiles from (see USEPA 2022 Appendix D) are applied to VOC and PM emission factors.\n",
-    "creationDate": "2025-12-10T12:00:00",
-    "dataCollectionDescription": "Data were modeled in 2025.\n",
+    "completenessDescription": "HAP speciation profiles from USEPA 2022 (see Appendix D) are applied to VOC and PM emission factors.",
+    "creationDate": "2025-12-19T12:00:00",
+    "dataCollectionDescription": "Data were modeled in 2025.",
     "dataDocumentor": {
       "@type": "Actor",
       "@id": "38e67478-a915-43d9-ad67-e25db79a4acc",
@@ -2042,26 +2042,25 @@
       "category": "Organisations",
       "name": "ERG"
     },
-    "dataSelectionDescription": "''\n",
-    "dataTreatmentDescription": "Regional distances were calculated using averages distances for the routes using shipping lanes between the more visited ports based on the Entrance and Clearance data for 2023 (USACE 2023). The shipping lanes were from the Global Shipping Routes from ArcGIS which were originally generated from shipping lane vectors from the Map of the World Oceans. This analysis provided the typical transit distance and percentages in ECA zones.\nThe average vessel speeds for the typical vessels are used to calculate the transit time by dividing the distance by speed. The average speed is calculated based on the mode of transit speed ratios multiplied by the max speed (USEPA 2022).\nThe time for the port, maneuvering, and anchorage times also need to be estimated. The international port times were derived from data from median time spent in port by container ships worldwide in 2021, by country. The US dwell times were based on a US average from 2022 of 34.6 hours for container ships and 41 hours for tankers (BTS 2023). \nManeuvering time was estimated based on the distance a ship travels from the breakwater to the pier/wharf/dock (PWD). Average maneuvering speeds range between 3 to 8 knots. Outbound speeds are usually faster since the ship does not need to dock (Browning 2006). Because of this we assumed a speed of  3 inbound and 5.5 for the outbound speed. The distance was measured from the innermost point of the port to the coastline plus 0.5 miles for the breakwater. These distances were averaged by the US region and global regions. \nThe anchorage time was assumed to be 6.5% of the total transit time. This is based on averaging the average percentage time of anchorage from AIS tracking, which ranges from 4% to 9%.\n",
-    "geographyDescription": "This process assumes an average emissions rate based on a route from Asia to US West Coast. The route is also used to estimate the portion of emissions that occur within an Emissions Control Area (ECA), where reduced emissions are required.  Note no location object is assigned as emissions are primarily occuring in  open waters.\n",
-    "intendedApplication": "Situation C1 - Accounting, with system-external interactions - The intended application is a purely descriptive accounting / documentation of the analyzed system including existing interactions with other systems in the LCI model. The target audience of this model includes LCA practitioners, industry, and the general public. A full inventory of environmental flows are included; thus this unit process can be used for a full range of LCIA impact categories.\n",
-    "inventoryMethodDescription": "Attributional process.\n",
-    "modelingConstantsDescription": "Engine kW ratings for propulsion, auxiliary and boilers were obtained from the EPA  Ports Emisisons Inventory Guidance (USEPA 2022). For the auxiliary and boilers, the kW already took into account the load factor. For the propulsion a load factor was calculated using the well-known Propeller Law (see Equation 3.6 in USEPA 2022). The Propeller Law takes into account the sea margin, which is an efficiency factor of between 1.1 and 1.15 for weather conditions. However, at lower speeds, where the load is 20% or less, emissions are increased due to inefficiencies. These factors were also obtained from EPA (USEPA 2022).  For these calculations we used the adjustment for load factors <=2%.\n",
-    "projectDescription": "This dataset was developed by the Federal LCA Commons Data Curator Eastern Research Group, Inc. (ERG) under subcontract (SUB-2024-10066) to the National Renewable Energy Laboratory under Department of Energy (DOE) Prime Contract No. DE-AC36-08GO28308. The work is funded by DOE's Advanced Materials & Manufacturing Technologies Office (AMMTO).\n",
+    "dataTreatmentDescription": "Regional distances were calculated using averages distances for the routes using shipping lanes between the more visited ports based on the Entrance and Clearance data for 2023 (USACE 2023). The shipping lanes were from the Global Shipping Routes from ArcGIS which were originally generated from shipping lane vectors from the Map of the World Oceans. This analysis provided the typical transit distance and percentages in ECA zones.\nThe average vessel speeds for the typical vessels are used to calculate the transit time by dividing the distance by speed. The average speed is calculated based on the mode of transit speed ratios multiplied by the max speed (USEPA 2022).\nThe time for the port, maneuvering, and anchorage times also need to be estimated. The international port times were derived from data from median time spent in port by container ships worldwide in 2021, by country. The US dwell times were based on a US average from 2022 of 34.6 hours for container ships and 41 hours for tankers (BTS 2023). \nManeuvering time was estimated based on the distance a ship travels from the breakwater to the pier/wharf/dock (PWD). Average maneuvering speeds range between 3 to 8 knots. Outbound speeds are usually faster since the ship does not need to dock (Browning 2006). Because of this we assumed a speed of  3 inbound and 5.5 for the outbound speed. The distance was measured from the innermost point of the port to the coastline plus 0.5 miles for the breakwater. These distances were averaged by the US region and global regions. \nThe anchorage time was assumed to be 6.5% of the total transit time. This is based on averaging the average percentage time of anchorage from AIS tracking, which ranges from 4% to 9%.",
+    "geographyDescription": "This process assumes an average emissions rate based on a route from Asia to US West Coast. The route is also used to estimate the portion of emissions that occur within an Emissions Control Area (ECA), where reduced emissions are required.  Note no location object is assigned as emissions are primarily occuring in  open waters.",
+    "intendedApplication": "Situation C1 - Accounting, with system-external interactions - The intended application is a purely descriptive accounting / documentation of the analyzed system including existing interactions with other systems in the LCI model. The target audience of this model includes LCA practitioners, industry, and the general public. A full inventory of environmental flows are included; thus this unit process can be used for a full range of LCIA impact categories.",
+    "inventoryMethodDescription": "Attributional process.",
+    "modelingConstantsDescription": "Engine kW ratings for propulsion, auxiliary and boilers were obtained from the EPA Ports Emisisons Inventory Guidance (USEPA 2022). For the auxiliary and boilers, the kW already took into account the load factor. For the propulsion a load factor was calculated using the well-known Propeller Law (see Equation 3.6 in USEPA 2022). The Propeller Law takes into account the sea margin, which is an efficiency factor of between 1.1 and 1.15 for weather conditions. However, at lower speeds, where the load is 20% or less, emissions are increased due to inefficiencies. These factors were also obtained from EPA (USEPA 2022). For these calculations we used the adjustment for load factors <=2%.",
+    "projectDescription": "This dataset was developed by the Federal LCA Commons Data Curator Eastern Research Group, Inc. (ERG) under subcontract (SUB-2024-10066) to the National Renewable Energy Laboratory under Department of Energy (DOE) Prime Contract No. DE-AC36-08GO28308. The work is funded by DOE's Advanced Materials & Manufacturing Technologies Office (AMMTO).",
     "publication": {
       "@type": "Source",
       "@id": "6fb04162-f983-39c2-8e48-e51d7f13e40c",
       "name": "ERG (2025) Marine Transport v1.0"
     },
-    "restrictionsDescription": "These U.S. LCI Database Project data (\"Data\") are provided by the National Renewable Energy Laboratory (\"NREL\"), operated by the Alliance for Sustainable Energy, LLC (\"Alliance\") for the US Department of Energy (\"DOE\") under Contract No. DE-AC36-08GO28308. The United States Government (the \"Government\") retains and the user acknowledges that the Government retains a non-exclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of these data, or allow others to do so, for Government purposes.\nAccess to and use of these Data shall impose the following obligations on the user, as set forth in this Agreement. The user is granted the right, without any fee or cost, to use, copy, modify, alter, enhance and distribute these Data for any purpose whatsoever, provided that this entire notice appears in all copies of the Data. Any modification, alteration or enhancement of these data shall be identified and documented by the user. Further, the user agrees to credit the DOE/NREL/Alliance in any publication that results from the use of these Data. The names DOE/NREL/Alliance, however, may not be used in any advertising or publicity to endorse or promote any products or commercial entities unless specific written permission is obtained from DOE/NREL/Alliance. The user also understands that DOE/NREL/Alliance is not obligated to provide the user with any support, consulting, training or assistance of any kind with regard to the use of these Data or to provide the user with any updates, revisions or new versions of these Data.\nYOU AGREE TO INDEMNIFY THE GOVERNMENT AND DOE/NREL/ALLIANCE, AND ITS SUBSIDIARIES, AFFILIATES, OFFICERS, AGENTS, AND EMPLOYEES AGAINST ANY CLAIM OR DEMAND, INCLUDING REASONABLE ATTORNEYS' FEES, RELATED TO YOUR USE OF THESE DATA. THESE DATA ARE PROVIDED BY DOE/NREL/ALLIANCE \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE GOVERNMENT OR DOE/NREL/ALLIANCE BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER, INCLUDING BUT NOT LIMITED TO CLAIMS ASSOCIATED WITH THE LOSS OF DATA OR PROFITS, WHICH MAY RESULT FROM AN ACTION IN CONTRACT, NEGLIGENCE OR OTHER TORTIOUS CLAIM THAT ARISES OUT OF OR IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THESE DATA.\n",
+    "restrictionsDescription": "These U.S. LCI Database Project data (\"Data\") are provided by the National Renewable Energy Laboratory (\"NREL\"), operated by the Alliance for Sustainable Energy, LLC (\"Alliance\") for the US Department of Energy (\"DOE\") under Contract No. DE-AC36-08GO28308. The United States Government (the \"Government\") retains and the user acknowledges that the Government retains a non-exclusive, paid-up, irrevocable, worldwide license to publish or reproduce the published form of these data, or allow others to do so, for Government purposes.\nAccess to and use of these Data shall impose the following obligations on the user, as set forth in this Agreement. The user is granted the right, without any fee or cost, to use, copy, modify, alter, enhance and distribute these Data for any purpose whatsoever, provided that this entire notice appears in all copies of the Data. Any modification, alteration or enhancement of these data shall be identified and documented by the user. Further, the user agrees to credit the DOE/NREL/Alliance in any publication that results from the use of these Data. The names DOE/NREL/Alliance, however, may not be used in any advertising or publicity to endorse or promote any products or commercial entities unless specific written permission is obtained from DOE/NREL/Alliance. The user also understands that DOE/NREL/Alliance is not obligated to provide the user with any support, consulting, training or assistance of any kind with regard to the use of these Data or to provide the user with any updates, revisions or new versions of these Data.\nYOU AGREE TO INDEMNIFY THE GOVERNMENT AND DOE/NREL/ALLIANCE, AND ITS SUBSIDIARIES, AFFILIATES, OFFICERS, AGENTS, AND EMPLOYEES AGAINST ANY CLAIM OR DEMAND, INCLUDING REASONABLE ATTORNEYS' FEES, RELATED TO YOUR USE OF THESE DATA. THESE DATA ARE PROVIDED BY DOE/NREL/ALLIANCE \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE GOVERNMENT OR DOE/NREL/ALLIANCE BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER, INCLUDING BUT NOT LIMITED TO CLAIMS ASSOCIATED WITH THE LOSS OF DATA OR PROFITS, WHICH MAY RESULT FROM AN ACTION IN CONTRACT, NEGLIGENCE OR OTHER TORTIOUS CLAIM THAT ARISES OUT OF OR IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THESE DATA.",
     "reviews": [
       {
         "details": "ERG internally reviewed the underlying assumptions and operations to generate the datasets and the metadata.\n",
         "reviewType": "Dependent internal review"
       }
     ],
-    "samplingDescription": "Representative routes from various global regions were selected based on the most frequent vessel activity.\n",
+    "samplingDescription": "Representative routes from various global regions were selected based on the most frequent vessel activity.",
     "sources": [
       {
         "@type": "Source",
@@ -2089,9 +2088,9 @@
         "name": "BTS (2023) Tanker Dwell Times"
       }
     ],
-    "technologyDescription": "Chemical Tankers are liquid-cargo vessels that transport chemicals in bulk.\n This type is modeled as Handymax with a capacity of 48000.0 metric tons and an assumed utilization of 98.0%. Vessel characteristics are sourced from EPA Ports Emissions Inventory Guidance, Appendix C (USEPA 2022).\n",
-    "timeDescription": "This process reflects the marine fleet as estimated in 2023 based on vessel Entrance and Clearance data for U.S. ports for that year.\n",
-    "useAdvice": "Select routes are provided from various global regions to the United States. The choice of route primarily impacts the share of the emissions that occur during transit relative to near-shore emissions during maneuvering, hotelling, and anchorage. These processes are generally applicable to outgoing transit as well. This process is intended to connect to fuel supply processes in the USLCI.\n",
+    "technologyDescription": "Chemical Tankers are liquid-cargo vessels that transport chemicals in bulk. This type is modeled as Handymax with a capacity of 48000.0 metric tons and an assumed utilization of 98.0%. Vessel characteristics are sourced from EPA Ports Emissions Inventory Guidance, Appendix C (USEPA 2022).",
+    "timeDescription": "This process reflects the marine fleet as estimated in 2023 based on vessel Entrance and Clearance data for U.S. ports for that year.",
+    "useAdvice": "Select routes are provided from various global regions to the United States. The choice of route primarily impacts the share of the emissions that occur during transit relative to near-shore emissions during maneuvering, hotelling, and anchorage. These processes are generally applicable to outgoing transit as well. This process is intended to connect to fuel supply processes in the USLCI.",
     "validFrom": "2023-01-01T00:00:00",
     "validUntil": "2023-12-31T00:00:00"
   },

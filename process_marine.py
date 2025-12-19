@@ -174,6 +174,7 @@ emissions = (pd.read_csv(data_path / 'emission_factors.csv')
              .melt(id_vars = ['Engine', 'Fuel'],
                    var_name = 'Pollutant',
                    value_name = 'EF')
+             .assign(em_flag = 'primary')
              )
 
 # Apply speciation
@@ -195,6 +196,7 @@ for _, emission_row in emissions.iterrows():
             new_row = emission_row.copy()
             new_row['Pollutant'] = spec_row['Pollutant']  # Replace with speciated pollutant name
             new_row['EF'] = emission_row['EF'] * spec_row['Fraction']  # Adjust EF
+            new_row['em_flag'] = 'secondary'
             new_rows.append(new_row)
 
 # Append the new rows to the original emissions dataframe
@@ -361,6 +363,16 @@ else:
 #%% Assign exchange dqi
 from flcac_utils.util import format_dqi_score, increment_dqi_value
 df_olca['exchange_dqi'] = format_dqi_score(marine_inputs['DQI']['Flow'])
+# update Flow Reliability (position 1)
+df_olca['exchange_dqi'] = np.where(
+    (df_olca['em_flag'] == 'secondary') | (df_olca['IsInput'] == True),
+    df_olca['exchange_dqi'].apply(lambda x: increment_dqi_value(x, 1)),
+    df_olca['exchange_dqi'])
+# update temporarl correlation (position 2)
+df_olca['exchange_dqi'] = np.where(
+    (df_olca['em_flag'] == 'secondary') & (df_olca['FlowType'] == 'ELEMENTARY_FLOW'),
+    df_olca['exchange_dqi'].apply(lambda x: increment_dqi_value(x, 2)),
+    df_olca['exchange_dqi'])
 # drop DQI entry for reference flow
 df_olca['exchange_dqi'] = np.where(df_olca['reference'] == True,
                                     '', df_olca['exchange_dqi'])
@@ -368,7 +380,7 @@ df_olca['exchange_dqi'] = np.where(df_olca['reference'] == True,
 #%% Aggregate
 
 df_olca = df_olca.drop(columns=['Energy', 'FlowTotal', 'tons',
-                                 'Zone', 'Leg', 'Engine',
+                                 'Zone', 'Leg', 'Engine', 'em_flag',
                                  'AvgOfDistance (nm)'])
 df_olca = (df_olca
            .groupby([c for c in df_olca if c not in ['FlowAmount', 'amount']],
@@ -416,8 +428,9 @@ for pid, chunk in df_olca.groupby('ProcessID'):
         for col in chunk.columns 
         if chunk[col].nunique() == 1
     }
-    vessel_desc = process_meta['ship_description'].get(
+    vessel_desc = (process_meta['ship_description'].get(
             re.sub(r'[^a-zA-Z0-9]', '_', meta['Ship Type'].replace(',','')).lower())
+            .rstrip())
     _process_meta = process_meta.copy()
     _process_meta.pop('ship_description')
     for k, v in _process_meta.items():
@@ -446,7 +459,8 @@ for pid, chunk in df_olca.groupby('ProcessID'):
                                 )
     processes.update(p_dict)
 # build bridge processes
-bridge_processes = build_process_dict(df_bridge, flows, meta=marine_inputs['Bridge'])
+bridge_processes = build_process_dict(df_bridge, flows,
+                                      meta=marine_inputs.get('Bridge', {}))
 
 #%% Write to json
 out_path = parent_path / 'output'

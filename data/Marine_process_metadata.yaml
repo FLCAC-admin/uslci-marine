@@ -42,24 +42,23 @@ inventory_method_description: >
     Attributional process.
 
 modeling_constants_description: >
-    Engine kW ratings for propulsion, auxiliary and boilers were obtained from the EPA 
+    Engine kW ratings for propulsion, auxiliary and boilers were obtained from the EPA
     Ports Emisisons Inventory Guidance (USEPA 2022). For the auxiliary and boilers,
     the kW already took into account the load factor. For the propulsion a load
     factor was calculated using the well-known Propeller Law (see Equation 3.6 in
     USEPA 2022). The Propeller Law takes into account the sea margin, which is an
     efficiency factor of between [SM_COASTAL] and [SM_OPEN] for weather conditions.
     However, at lower speeds, where the load is 20% or less, emissions are increased
-    due to inefficiencies. These factors were also obtained from EPA (USEPA 2022). 
+    due to inefficiencies. These factors were also obtained from EPA (USEPA 2022).
     For these calculations we used the adjustment for load factors <=2%.
 
 ## Data Source information
 
 completeness_description: >
-    HAP speciation profiles from (see USEPA 2022 Appendix D) are applied to VOC
+    HAP speciation profiles from USEPA 2022 (see Appendix D) are applied to VOC
     and PM emission factors.
 
-data_selection_description: >
-    ''
+# data_selection_description: 
 
 data_treatment_description: >
     Regional distances were calculated using averages distances for the routes
