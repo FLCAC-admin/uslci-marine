@@ -10,7 +10,7 @@ from pathlib import Path
 from statistics import mean
 import re
 
-auth = False
+auth = True
 parent_path = Path(__file__).parent
 data_path =  parent_path / 'data'
 

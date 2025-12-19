@@ -1,9 +1,9 @@
 {
   "@type": "Process",
-  "@id": "a1e5a0eb-ff1d-3434-9e8a-a4d2ffbd516f",
+  "@id": "999f18c6-0312-367d-8037-d4d68f58ea12",
   "category": "48-49: Transportation and Warehousing / 4831: Deep Sea, Coastal, and Great Lakes Water Transportation",
   "defaultAllocationMethod": "PHYSICAL_ALLOCATION",
-  "description": "This dataset represents the movement of goods via a Chemical Tanker using Residual fuel oil as a fuel source. The reference flow is the movement of a unit of mass of goods (e.g., 1 kg) across a distance (e.g., 1 km). Emissions account for vessel activity during transit, maneuvering, hotelling, and anchorage.",
+  "description": "This dataset represents the movement of goods via a Container Ship using Distillate as a fuel source. The reference flow is the movement of a unit of mass of goods (e.g., 1 kg) across a distance (e.g., 1 km). Emissions account for vessel activity during transit, maneuvering, hotelling, and anchorage.",
   "dqEntry": "(4;2)",
   "dqSystem": {
     "@type": "DQSystem",
@@ -17,7 +17,7 @@
   },
   "exchanges": [
     {
-      "amount": 3.843e-10,
+      "amount": 1.67e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -40,7 +40,7 @@
       }
     },
     {
-      "amount": 3.175e-09,
+      "amount": 2.616e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -63,7 +63,7 @@
       }
     },
     {
-      "amount": 2.701e-09,
+      "amount": 1.174e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -86,7 +86,7 @@
       }
     },
     {
-      "amount": 2.232e-08,
+      "amount": 1.839e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -109,7 +109,7 @@
       }
     },
     {
-      "amount": 1.931e-11,
+      "amount": 8.393e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -132,7 +132,7 @@
       }
     },
     {
-      "amount": 1.595e-10,
+      "amount": 1.314e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -155,7 +155,7 @@
       }
     },
     {
-      "amount": 4.476e-11,
+      "amount": 1.946e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -178,7 +178,7 @@
       }
     },
     {
-      "amount": 3.698e-10,
+      "amount": 3.047e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -201,7 +201,7 @@
       }
     },
     {
-      "amount": 3.711e-09,
+      "amount": 1.613e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -224,7 +224,7 @@
       }
     },
     {
-      "amount": 3.066e-08,
+      "amount": 2.526e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -247,7 +247,7 @@
       }
     },
     {
-      "amount": 7.01e-10,
+      "amount": 3.047e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -270,7 +270,7 @@
       }
     },
     {
-      "amount": 5.792e-09,
+      "amount": 4.772e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -293,7 +293,7 @@
       }
     },
     {
-      "amount": 1.945e-08,
+      "amount": 2.827e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -316,7 +316,7 @@
       }
     },
     {
-      "amount": 1.271e-07,
+      "amount": 3.823e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -339,7 +339,7 @@
       }
     },
     {
-      "amount": 1.305e-10,
+      "amount": 5.672e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -362,7 +362,7 @@
       }
     },
     {
-      "amount": 1.078e-09,
+      "amount": 8.883e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -385,7 +385,7 @@
       }
     },
     {
-      "amount": 6.215e-10,
+      "amount": 9.032e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -408,7 +408,7 @@
       }
     },
     {
-      "amount": 4.063e-09,
+      "amount": 1.221e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -431,7 +431,7 @@
       }
     },
     {
-      "amount": 2.618e-11,
+      "amount": 3.804e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -454,7 +454,7 @@
       }
     },
     {
-      "amount": 1.711e-10,
+      "amount": 5.144e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -477,7 +477,7 @@
       }
     },
     {
-      "amount": 8.914e-12,
+      "amount": 1.295e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -500,7 +500,7 @@
       }
     },
     {
-      "amount": 5.826e-11,
+      "amount": 1.752e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -523,7 +523,7 @@
       }
     },
     {
-      "amount": 1.798e-09,
+      "amount": 7.814e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -546,7 +546,7 @@
       }
     },
     {
-      "amount": 1.485e-08,
+      "amount": 1.224e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -569,7 +569,7 @@
       }
     },
     {
-      "amount": 4.224e-12,
+      "amount": 6.139e-12,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -592,7 +592,7 @@
       }
     },
     {
-      "amount": 2.761e-11,
+      "amount": 8.302e-12,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -615,7 +615,7 @@
       }
     },
     {
-      "amount": 4.224e-12,
+      "amount": 6.139e-12,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -638,7 +638,7 @@
       }
     },
     {
-      "amount": 2.761e-11,
+      "amount": 8.302e-12,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -661,7 +661,7 @@
       }
     },
     {
-      "amount": 2.385e-10,
+      "amount": 3.466e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -684,7 +684,7 @@
       }
     },
     {
-      "amount": 1.559e-09,
+      "amount": 4.687e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -707,7 +707,7 @@
       }
     },
     {
-      "amount": 0.000475,
+      "amount": 0.001838,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -730,7 +730,7 @@
       }
     },
     {
-      "amount": 0.003105,
+      "amount": 0.002485,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -753,7 +753,7 @@
       }
     },
     {
-      "amount": 8.97e-07,
+      "amount": 3.776e-06,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -776,7 +776,7 @@
       }
     },
     {
-      "amount": 7.02e-06,
+      "amount": 5.773e-06,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -799,7 +799,7 @@
       }
     },
     {
-      "amount": 1.647e-11,
+      "amount": 2.394e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -822,7 +822,7 @@
       }
     },
     {
-      "amount": 1.077e-10,
+      "amount": 3.237e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -845,7 +845,35 @@
       }
     },
     {
-      "amount": 9.065e-11,
+      "amount": 0.001415,
+      "defaultProvider": {
+        "@type": "Process",
+        "@id": "0aaf1e13-5d80-37f9-b7bb-81a6b8965c71"
+      },
+      "description": "",
+      "dqEntry": "(3;3;2;2;1)",
+      "flow": {
+        "@type": "Flow",
+        "@id": "d939590b-a0d7-310c-8952-9921ed64a078",
+        "category": "Technosphere flows/31-33: Manufacturing/3241: Petroleum and Coal Products Manufacturing",
+        "name": "Diesel, at refinery"
+      },
+      "flowProperty": {
+        "@type": "FlowProperty",
+        "@id": "93a60a56-a3c8-11da-a746-0800200b9a66",
+        "name": "Mass"
+      },
+      "isAvoidedProduct": false,
+      "isInput": true,
+      "isQuantitativeReference": false,
+      "unit": {
+        "@type": "Unit",
+        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
+        "name": "kg"
+      }
+    },
+    {
+      "amount": 1.317e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -868,7 +896,7 @@
       }
     },
     {
-      "amount": 5.925e-10,
+      "amount": 1.782e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -891,7 +919,7 @@
       }
     },
     {
-      "amount": 6.221e-11,
+      "amount": 2.704e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -914,7 +942,7 @@
       }
     },
     {
-      "amount": 5.14e-10,
+      "amount": 4.235e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -937,7 +965,7 @@
       }
     },
     {
-      "amount": 1.62e-08,
+      "amount": 7.04e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -960,7 +988,7 @@
       }
     },
     {
-      "amount": 1.338e-07,
+      "amount": 1.103e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -983,7 +1011,7 @@
       }
     },
     {
-      "amount": 1.058e-09,
+      "amount": 4.601e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1006,7 +1034,7 @@
       }
     },
     {
-      "amount": 8.745e-09,
+      "amount": 7.205e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1029,7 +1057,7 @@
       }
     },
     {
-      "amount": 1.263e-10,
+      "amount": 1.836e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1052,7 +1080,7 @@
       }
     },
     {
-      "amount": 8.257e-10,
+      "amount": 2.483e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1075,7 +1103,7 @@
       }
     },
     {
-      "amount": 3.254e-12,
+      "amount": 4.729e-12,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1098,7 +1126,7 @@
       }
     },
     {
-      "amount": 2.127e-11,
+      "amount": 6.395e-12,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1121,7 +1149,7 @@
       }
     },
     {
-      "amount": 4.224e-14,
+      "amount": 6.139e-14,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1144,7 +1172,7 @@
       }
     },
     {
-      "amount": 2.761e-13,
+      "amount": 8.302e-14,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1167,7 +1195,7 @@
       }
     },
     {
-      "amount": 7.206e-09,
+      "amount": 3.132e-08,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1190,7 +1218,7 @@
       }
     },
     {
-      "amount": 5.951e-08,
+      "amount": 4.903e-08,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1213,7 +1241,7 @@
       }
     },
     {
-      "amount": 1.188e-08,
+      "amount": 5.162e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1236,7 +1264,7 @@
       }
     },
     {
-      "amount": 9.812e-08,
+      "amount": 8.084e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1259,7 +1287,7 @@
       }
     },
     {
-      "amount": 6.943e-10,
+      "amount": 1.009e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1282,7 +1310,7 @@
       }
     },
     {
-      "amount": 4.538e-09,
+      "amount": 1.365e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1305,7 +1333,7 @@
       }
     },
     {
-      "amount": 1.126e-05,
+      "amount": 4.462e-05,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1328,7 +1356,7 @@
       }
     },
     {
-      "amount": 7.363e-05,
+      "amount": 6.034e-05,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1351,7 +1379,7 @@
       }
     },
     {
-      "amount": 2.801e-08,
+      "amount": 1.023e-07,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1374,7 +1402,7 @@
       }
     },
     {
-      "amount": 1.585e-07,
+      "amount": 1.215e-07,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1397,7 +1425,7 @@
       }
     },
     {
-      "amount": 4.026e-07,
+      "amount": 5.023e-07,
       "description": "ECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1420,7 +1448,7 @@
       }
     },
     {
-      "amount": 8.555e-08,
+      "amount": 1.121e-07,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1443,7 +1471,7 @@
       }
     },
     {
-      "amount": 3.712e-06,
+      "amount": 1.274e-06,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1466,7 +1494,7 @@
       }
     },
     {
-      "amount": 3.907e-07,
+      "amount": 4.886e-07,
       "description": "ECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1489,7 +1517,7 @@
       }
     },
     {
-      "amount": 8.295e-08,
+      "amount": 1.088e-07,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1512,7 +1540,7 @@
       }
     },
     {
-      "amount": 3.599e-06,
+      "amount": 1.236e-06,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1535,7 +1563,7 @@
       }
     },
     {
-      "amount": 5.144e-10,
+      "amount": 2.236e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1558,7 +1586,7 @@
       }
     },
     {
-      "amount": 4.25e-09,
+      "amount": 3.502e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1581,7 +1609,7 @@
       }
     },
     {
-      "amount": 4.224e-13,
+      "amount": 6.139e-13,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1604,7 +1632,7 @@
       }
     },
     {
-      "amount": 2.761e-12,
+      "amount": 8.302e-13,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1627,7 +1655,7 @@
       }
     },
     {
-      "amount": 5.755e-10,
+      "amount": 2.501e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1650,7 +1678,7 @@
       }
     },
     {
-      "amount": 4.755e-09,
+      "amount": 3.917e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1673,7 +1701,7 @@
       }
     },
     {
-      "amount": 3.406e-11,
+      "amount": 4.949e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1696,7 +1724,7 @@
       }
     },
     {
-      "amount": 2.226e-10,
+      "amount": 6.693e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1719,35 +1747,7 @@
       }
     },
     {
-      "amount": 0.001184,
-      "defaultProvider": {
-        "@type": "Process",
-        "@id": "0aaf1e13-5d80-37f9-b7bb-81a6b8965c71"
-      },
-      "description": "",
-      "dqEntry": "(3;3;2;2;1)",
-      "flow": {
-        "@type": "Flow",
-        "@id": "f7c00d19-9601-373a-ba23-593e251b4dee",
-        "category": "Technosphere flows/31-33: Manufacturing/3241: Petroleum and Coal Products Manufacturing",
-        "name": "Residual fuel oil, at refinery"
-      },
-      "flowProperty": {
-        "@type": "FlowProperty",
-        "@id": "93a60a56-a3c8-11da-a746-0800200b9a66",
-        "name": "Mass"
-      },
-      "isAvoidedProduct": false,
-      "isInput": true,
-      "isQuantitativeReference": false,
-      "unit": {
-        "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
-      }
-    },
-    {
-      "amount": 4.427e-14,
+      "amount": 6.433e-14,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1770,7 +1770,7 @@
       }
     },
     {
-      "amount": 2.893e-13,
+      "amount": 8.699e-14,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1793,7 +1793,7 @@
       }
     },
     {
-      "amount": 3.9e-07,
+      "amount": 9.881e-07,
       "description": "ECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1816,7 +1816,7 @@
       }
     },
     {
-      "amount": 3.456e-07,
+      "amount": 6.668e-07,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1839,7 +1839,7 @@
       }
     },
     {
-      "amount": 1.5e-05,
+      "amount": 7.576e-06,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1862,7 +1862,7 @@
       }
     },
     {
-      "amount": 7.72e-10,
+      "amount": 3.356e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1885,7 +1885,7 @@
       }
     },
     {
-      "amount": 6.378e-09,
+      "amount": 5.255e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1908,7 +1908,7 @@
       }
     },
     {
-      "amount": 3.794e-07,
+      "amount": 1.649e-06,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1931,7 +1931,7 @@
       }
     },
     {
-      "amount": 3.134e-06,
+      "amount": 2.582e-06,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1954,7 +1954,7 @@
       }
     },
     {
-      "amount": 1.946e-10,
+      "amount": 8.459e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1977,7 +1977,7 @@
       }
     },
     {
-      "amount": 1.608e-09,
+      "amount": 1.325e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -2005,9 +2005,9 @@
       "dqEntry": "",
       "flow": {
         "@type": "Flow",
-        "@id": "8c3474d2-9fc0-3940-a631-ec4229207e82",
+        "@id": "e46da55e-5561-37d0-8e99-71fade967cf3",
         "category": "Technosphere Flows / 48-49: Transportation and Warehousing / 4831: Deep Sea, Coastal, and Great Lakes Water Transportation",
-        "name": "Transport, chemical tanker; residual fuel oil powered"
+        "name": "Transport, container ship; distillate powered"
       },
       "flowProperty": {
         "@type": "FlowProperty",
@@ -2025,7 +2025,7 @@
     }
   ],
   "lastChange": "2025-12-19T12:00:00Z",
-  "name": "Transport, chemical tanker; residual fuel oil powered; Atlantic of Central/South America to US Caribbean",
+  "name": "Transport, container ship; distillate powered; Bermuda to US East Coast",
   "processDocumentation": {
     "completenessDescription": "HAP speciation profiles from USEPA 2022 (see Appendix D) are applied to VOC and PM emission factors.",
     "creationDate": "2025-12-19T12:00:00",
@@ -2043,7 +2043,7 @@
       "name": "ERG"
     },
     "dataTreatmentDescription": "Regional distances were calculated using averages distances for the routes using shipping lanes between the more visited ports based on the Entrance and Clearance data for 2023 (USACE 2023). The shipping lanes were from the Global Shipping Routes from ArcGIS which were originally generated from shipping lane vectors from the Map of the World Oceans. This analysis provided the typical transit distance and percentages in ECA zones.\nThe average vessel speeds for the typical vessels are used to calculate the transit time by dividing the distance by speed. The average speed is calculated based on the mode of transit speed ratios multiplied by the max speed (USEPA 2022).\nThe time for the port, maneuvering, and anchorage times also need to be estimated. The international port times were derived from data from median time spent in port by container ships worldwide in 2021, by country. The US dwell times were based on a US average from 2022 of 34.6 hours for container ships and 41 hours for tankers (BTS 2023). \nManeuvering time was estimated based on the distance a ship travels from the breakwater to the pier/wharf/dock (PWD). Average maneuvering speeds range between 3 to 8 knots. Outbound speeds are usually faster since the ship does not need to dock (Browning 2006). Because of this we assumed a speed of  3 inbound and 5.5 for the outbound speed. The distance was measured from the innermost point of the port to the coastline plus 0.5 miles for the breakwater. These distances were averaged by the US region and global regions. \nThe anchorage time was assumed to be 6.5% of the total transit time. This is based on averaging the average percentage time of anchorage from AIS tracking, which ranges from 4% to 9%.",
-    "geographyDescription": "This process assumes an average emissions rate based on a route from Atlantic of Central/South America to US Caribbean. The route is also used to estimate the portion of emissions that occur within an Emissions Control Area (ECA), where reduced emissions are required.  Note no location object is assigned as emissions are primarily occuring in  open waters.",
+    "geographyDescription": "This process assumes an average emissions rate based on a route from Bermuda to US East Coast. The route is also used to estimate the portion of emissions that occur within an Emissions Control Area (ECA), where reduced emissions are required.  Note no location object is assigned as emissions are primarily occuring in  open waters.",
     "intendedApplication": "Situation C1 - Accounting, with system-external interactions - The intended application is a purely descriptive accounting / documentation of the analyzed system including existing interactions with other systems in the LCI model. The target audience of this model includes LCA practitioners, industry, and the general public. A full inventory of environmental flows are included; thus this unit process can be used for a full range of LCIA impact categories.",
     "inventoryMethodDescription": "Attributional process.",
     "modelingConstantsDescription": "Engine kW ratings for propulsion, auxiliary and boilers were obtained from the EPA Ports Emisisons Inventory Guidance (USEPA 2022). For the auxiliary and boilers, the kW already took into account the load factor. For the propulsion a load factor was calculated using the well-known Propeller Law (see Equation 3.6 in USEPA 2022). The Propeller Law takes into account the sea margin, which is an efficiency factor of between 1.1 and 1.15 for weather conditions. However, at lower speeds, where the load is 20% or less, emissions are increased due to inefficiencies. These factors were also obtained from EPA (USEPA 2022). For these calculations we used the adjustment for load factors <=2%.",
@@ -2088,7 +2088,7 @@
         "name": "BTS (2023) Tanker Dwell Times"
       }
     ],
-    "technologyDescription": "Chemical Tankers are liquid-cargo vessels that transport chemicals in bulk. This type is modeled as Handymax with a capacity of 48000.0 metric tons and an assumed utilization of 98.0%. Vessel characteristics are sourced from EPA Ports Emissions Inventory Guidance, Appendix C (USEPA 2022).",
+    "technologyDescription": "Container Ships are dry-cargo vessels that carry containerized cargo. This type is modeled as 5,000 TEU with a capacity of 120000.0 metric tons and an assumed utilization of 65.0%. Vessel characteristics are sourced from EPA Ports Emissions Inventory Guidance, Appendix C (USEPA 2022).",
     "timeDescription": "This process reflects the marine fleet as estimated in 2023 based on vessel Entrance and Clearance data for U.S. ports for that year.",
     "useAdvice": "Select routes are provided from various global regions to the United States. The choice of route primarily impacts the share of the emissions that occur during transit relative to near-shore emissions during maneuvering, hotelling, and anchorage. These processes are generally applicable to outgoing transit as well. This process is intended to connect to fuel supply processes in the USLCI.",
     "validFrom": "2023-01-01T00:00:00",

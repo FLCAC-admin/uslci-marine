@@ -8,15 +8,10 @@ US East Coast,Eastern Canada,Residual fuel oil,Container Ship,"5,000 TEU"
 US East Coast,Europe,Residual fuel oil,Container Ship,"5,000 TEU"
 US East Coast,Pacific of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
 Hawaii,Asia,Residual fuel oil,Container Ship,"5,000 TEU"
-US Caribbean,Atlantic of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
-US Caribbean,Caribbean,Residual fuel oil,Container Ship,"5,000 TEU"
-US Caribbean,Eastern Canada,Residual fuel oil,Container Ship,"5,000 TEU"
-US Caribbean,Gulf of Mexico,Residual fuel oil,Container Ship,"5,000 TEU"
 US Gulf,Africa,Residual fuel oil,Container Ship,"5,000 TEU"
 US Gulf,Asia,Residual fuel oil,Container Ship,"5,000 TEU"
 US Gulf,Atlantic of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
 US Gulf,Caribbean,Residual fuel oil,Container Ship,"5,000 TEU"
-US Gulf,Gulf of Mexico,Residual fuel oil,Container Ship,"5,000 TEU"
 US Gulf,Pacific of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
 US West Coast,Asia,Residual fuel oil,Container Ship,"5,000 TEU"
 US West Coast,Pacific of Central/South America,Residual fuel oil,Container Ship,"5,000 TEU"
@@ -31,17 +26,48 @@ US East Coast,Eastern Canada,Residual fuel oil,Chemical Tanker,Handymax
 US East Coast,Europe,Residual fuel oil,Chemical Tanker,Handymax
 US East Coast,Pacific of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
 Hawaii,Asia,Residual fuel oil,Chemical Tanker,Handymax
-US Caribbean,Atlantic of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
-US Caribbean,Caribbean,Residual fuel oil,Chemical Tanker,Handymax
-US Caribbean,Eastern Canada,Residual fuel oil,Chemical Tanker,Handymax
-US Caribbean,Gulf of Mexico,Residual fuel oil,Chemical Tanker,Handymax
 US Gulf,Africa,Residual fuel oil,Chemical Tanker,Handymax
 US Gulf,Asia,Residual fuel oil,Chemical Tanker,Handymax
 US Gulf,Atlantic of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
 US Gulf,Caribbean,Residual fuel oil,Chemical Tanker,Handymax
-US Gulf,Gulf of Mexico,Residual fuel oil,Chemical Tanker,Handymax
 US Gulf,Pacific of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
 US West Coast,Asia,Residual fuel oil,Chemical Tanker,Handymax
 US West Coast,Pacific of Central/South America,Residual fuel oil,Chemical Tanker,Handymax
 US West Coast,Western Canada,Residual fuel oil,Chemical Tanker,Handymax
 US West Coast,Western Mexico,Residual fuel oil,Chemical Tanker,Handymax
+US East Coast,Africa,Distillate,Container Ship,"5,000 TEU"
+US East Coast,Asia,Distillate,Container Ship,"5,000 TEU"
+US East Coast,Atlantic of Central/South America,Distillate,Container Ship,"5,000 TEU"
+US East Coast,Bermuda,Distillate,Container Ship,"5,000 TEU"
+US East Coast,Caribbean,Distillate,Container Ship,"5,000 TEU"
+US East Coast,Eastern Canada,Distillate,Container Ship,"5,000 TEU"
+US East Coast,Europe,Distillate,Container Ship,"5,000 TEU"
+US East Coast,Pacific of Central/South America,Distillate,Container Ship,"5,000 TEU"
+Hawaii,Asia,Distillate,Container Ship,"5,000 TEU"
+US Gulf,Africa,Distillate,Container Ship,"5,000 TEU"
+US Gulf,Asia,Distillate,Container Ship,"5,000 TEU"
+US Gulf,Atlantic of Central/South America,Distillate,Container Ship,"5,000 TEU"
+US Gulf,Caribbean,Distillate,Container Ship,"5,000 TEU"
+US Gulf,Pacific of Central/South America,Distillate,Container Ship,"5,000 TEU"
+US West Coast,Asia,Distillate,Container Ship,"5,000 TEU"
+US West Coast,Pacific of Central/South America,Distillate,Container Ship,"5,000 TEU"
+US West Coast,Western Canada,Distillate,Container Ship,"5,000 TEU"
+US West Coast,Western Mexico,Distillate,Container Ship,"5,000 TEU"
+US East Coast,Africa,Distillate,Chemical Tanker,Handymax
+US East Coast,Asia,Distillate,Chemical Tanker,Handymax
+US East Coast,Atlantic of Central/South America,Distillate,Chemical Tanker,Handymax
+US East Coast,Bermuda,Distillate,Chemical Tanker,Handymax
+US East Coast,Caribbean,Distillate,Chemical Tanker,Handymax
+US East Coast,Eastern Canada,Distillate,Chemical Tanker,Handymax
+US East Coast,Europe,Distillate,Chemical Tanker,Handymax
+US East Coast,Pacific of Central/South America,Distillate,Chemical Tanker,Handymax
+Hawaii,Asia,Distillate,Chemical Tanker,Handymax
+US Gulf,Africa,Distillate,Chemical Tanker,Handymax
+US Gulf,Asia,Distillate,Chemical Tanker,Handymax
+US Gulf,Atlantic of Central/South America,Distillate,Chemical Tanker,Handymax
+US Gulf,Caribbean,Distillate,Chemical Tanker,Handymax
+US Gulf,Pacific of Central/South America,Distillate,Chemical Tanker,Handymax
+US West Coast,Asia,Distillate,Chemical Tanker,Handymax
+US West Coast,Pacific of Central/South America,Distillate,Chemical Tanker,Handymax
+US West Coast,Western Canada,Distillate,Chemical Tanker,Handymax
+US West Coast,Western Mexico,Distillate,Chemical Tanker,Handymax
