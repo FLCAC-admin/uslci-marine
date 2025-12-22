@@ -327,6 +327,16 @@ df_olca = (df_olca
            .assign(FlowName = lambda x: np.where(cond2, x['Fuel'], x['FlowName']))
            )
 
+# Update elementary flows to grams from kg
+df_olca = (df_olca
+           .assign(Unit = lambda x: np.where(x['FlowType']=='ELEMENTARY_FLOW',
+                                             'g', x['Unit']))
+           .assign(FlowAmount = lambda x: np.where(
+               x['FlowType']=='ELEMENTARY_FLOW',
+               x['FlowAmount']*1000, x['FlowAmount']))
+           .assign(location = 'GLO')
+           )
+
 #%% Apply fuel mapping data
 from flcac_utils.mapping import apply_tech_flow_mapping, create_bridge_processes
 
@@ -395,6 +405,7 @@ from flcac_utils.generate_processes import build_location_dict
 from flcac_utils.util import assign_year_to_meta, \
     extract_actors_from_process_meta, extract_dqsystems,\
     extract_sources_from_process_meta, generate_locations_from_exchange_df
+from flcac_utils.commons_api import get_single_object
 
 with open(data_path / 'Marine_process_metadata.yaml') as f:
     process_meta = yaml.safe_load(f)
@@ -410,8 +421,9 @@ dq_objs = extract_dqsystems(marine_inputs['DQI']['dqSystem'])
 process_meta['dq_entry'] = format_dqi_score(marine_inputs['DQI']['Process'])
 
 # prepare locations
-# locations = generate_locations_from_exchange_df(df_olca)
-# location_objs = build_location_dict(df_olca, locations)
+# get GLO location from USLCI
+loc = get_single_object('USLCI', 'LOCATION', '56bca136-90bb-3a77-9abb-7ce558af711e')
+location_objs = {'GLO': loc}
 
 #%% Build json file
 from flcac_utils.generate_processes import \
@@ -452,7 +464,7 @@ for pid, chunk in df_olca.groupby('ProcessID'):
         _process_meta[k] = v
     p_dict = build_process_dict(chunk,
                                 flows, meta=_process_meta,
-                                # loc_objs=location_objs,
+                                loc_objs=location_objs,
                                 source_objs=source_objs,
                                 actor_objs=actor_objs,
                                 dq_objs=dq_objs,
@@ -466,7 +478,7 @@ bridge_processes = build_process_dict(df_bridge, flows,
 out_path = parent_path / 'output'
 write_objects('marine', flows, new_flows, processes,
               source_objs, actor_objs, dq_objs,
-              # location_objs, bridge_processes,
+              location_objs, # bridge_processes,
               out_path = out_path)
 ## ^^ Import this file into an empty database with units and flow properties only
 ## or merge into USLCI and overwrite all existing datasets

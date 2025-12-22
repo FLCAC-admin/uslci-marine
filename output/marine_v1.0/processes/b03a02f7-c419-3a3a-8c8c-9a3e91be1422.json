@@ -17,7 +17,7 @@
   },
   "exchanges": [
     {
-      "amount": 1.235e-10,
+      "amount": 1.235e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -35,12 +35,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 3.382e-09,
+      "amount": 3.382e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -58,12 +58,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 8.683e-10,
+      "amount": 8.683e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -81,12 +81,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2.377e-08,
+      "amount": 2.377e-05,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -104,12 +104,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 6.207e-12,
+      "amount": 6.207e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -127,12 +127,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.699e-10,
+      "amount": 1.699e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -150,12 +150,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.439e-11,
+      "amount": 1.439e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -173,12 +173,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 3.939e-10,
+      "amount": 3.939e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -196,12 +196,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.193e-09,
+      "amount": 1.193e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -219,12 +219,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 3.266e-08,
+      "amount": 3.266e-05,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -242,12 +242,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2.254e-10,
+      "amount": 2.254e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -265,12 +265,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 6.169e-09,
+      "amount": 6.169e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -288,12 +288,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2.682e-09,
+      "amount": 2.682e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -311,12 +311,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 4.968e-08,
+      "amount": 4.968e-05,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -334,12 +334,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 4.195e-11,
+      "amount": 4.195e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -357,12 +357,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.148e-09,
+      "amount": 1.148e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -380,12 +380,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 8.569e-11,
+      "amount": 8.569e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -403,12 +403,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.587e-09,
+      "amount": 1.587e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -426,12 +426,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 3.609e-12,
+      "amount": 3.609e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -449,12 +449,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 6.685e-11,
+      "amount": 6.685e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -472,12 +472,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.229e-12,
+      "amount": 1.229e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -495,12 +495,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2.277e-11,
+      "amount": 2.277e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -518,12 +518,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 5.779e-10,
+      "amount": 5.779e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -541,12 +541,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.582e-08,
+      "amount": 1.582e-05,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -564,12 +564,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 5.824e-13,
+      "amount": 5.824e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -587,12 +587,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.079e-11,
+      "amount": 1.079e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -610,12 +610,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 5.824e-13,
+      "amount": 5.824e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -633,12 +633,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.079e-11,
+      "amount": 1.079e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -656,12 +656,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 3.288e-11,
+      "amount": 3.288e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -679,12 +679,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 6.092e-10,
+      "amount": 6.092e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -702,12 +702,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 0.0001743,
+      "amount": 0.1743,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -725,12 +725,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 0.00323,
+      "amount": 3.23,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -748,12 +748,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2.997e-07,
+      "amount": 0.0002997,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -771,12 +771,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 7.477e-06,
+      "amount": 0.007477,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -794,12 +794,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2.271e-12,
+      "amount": 2.271e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -817,12 +817,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 4.207e-11,
+      "amount": 4.207e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -840,8 +840,8 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
@@ -873,7 +873,7 @@
       }
     },
     {
-      "amount": 1.25e-11,
+      "amount": 1.25e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -891,12 +891,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2.315e-10,
+      "amount": 2.315e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -914,12 +914,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2e-11,
+      "amount": 2e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -937,12 +937,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 5.475e-10,
+      "amount": 5.475e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -960,12 +960,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 5.207e-09,
+      "amount": 5.207e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -983,12 +983,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.425e-07,
+      "amount": 0.0001425,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1006,12 +1006,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 3.402e-10,
+      "amount": 3.402e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1029,12 +1029,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 9.313e-09,
+      "amount": 9.313e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1052,12 +1052,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.742e-11,
+      "amount": 1.742e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1075,12 +1075,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 3.226e-10,
+      "amount": 3.226e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1098,12 +1098,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 4.486e-13,
+      "amount": 4.486e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1121,12 +1121,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 8.311e-12,
+      "amount": 8.311e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1144,12 +1144,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 5.824e-15,
+      "amount": 5.824e-12,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1167,12 +1167,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.079e-13,
+      "amount": 1.079e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1190,12 +1190,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2.317e-09,
+      "amount": 2.317e-06,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1213,12 +1213,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 6.339e-08,
+      "amount": 6.339e-05,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1236,12 +1236,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 3.817e-09,
+      "amount": 3.817e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1259,12 +1259,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.045e-07,
+      "amount": 0.0001045,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1282,12 +1282,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 9.572e-11,
+      "amount": 9.572e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1305,12 +1305,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.773e-09,
+      "amount": 1.773e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1328,12 +1328,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 4.233e-06,
+      "amount": 0.004233,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1351,12 +1351,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 7.842e-05,
+      "amount": 0.07842,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1374,12 +1374,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.068e-08,
+      "amount": 1.068e-05,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1397,12 +1397,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.579e-07,
+      "amount": 0.0001579,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1420,12 +1420,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 4.368e-08,
+      "amount": 4.368e-05,
       "description": "ECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1443,12 +1443,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.72e-08,
+      "amount": 1.72e-05,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1466,12 +1466,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.655e-06,
+      "amount": 0.001655,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1489,12 +1489,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 4.249e-08,
+      "amount": 4.249e-05,
       "description": "ECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1512,12 +1512,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.669e-08,
+      "amount": 1.669e-05,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1535,12 +1535,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.606e-06,
+      "amount": 0.001606,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1558,12 +1558,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.654e-10,
+      "amount": 1.654e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1581,12 +1581,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 4.527e-09,
+      "amount": 4.527e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1604,12 +1604,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 5.824e-14,
+      "amount": 5.824e-11,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1627,12 +1627,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.079e-12,
+      "amount": 1.079e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1650,12 +1650,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.85e-10,
+      "amount": 1.85e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1673,12 +1673,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 5.064e-09,
+      "amount": 5.064e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1696,12 +1696,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 4.695e-12,
+      "amount": 4.695e-09,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1719,12 +1719,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 8.699e-11,
+      "amount": 8.699e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1742,12 +1742,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 6.102e-15,
+      "amount": 6.102e-12,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1765,12 +1765,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.131e-13,
+      "amount": 1.131e-10,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1788,12 +1788,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 8.593e-08,
+      "amount": 8.593e-05,
       "description": "ECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1811,12 +1811,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.023e-07,
+      "amount": 0.0001023,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1834,12 +1834,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 9.845e-06,
+      "amount": 0.009845,
       "description": "nonECA",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1857,12 +1857,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 2.482e-10,
+      "amount": 2.482e-07,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1880,12 +1880,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 6.793e-09,
+      "amount": 6.793e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1903,12 +1903,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.219e-07,
+      "amount": 0.0001219,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1926,12 +1926,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 3.338e-06,
+      "amount": 0.003338,
       "description": "",
       "dqEntry": "(2;3;2;2;1)",
       "flow": {
@@ -1949,12 +1949,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 6.256e-11,
+      "amount": 6.256e-08,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1972,12 +1972,12 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
-      "amount": 1.712e-09,
+      "amount": 1.712e-06,
       "description": "",
       "dqEntry": "(3;4;2;2;1)",
       "flow": {
@@ -1995,8 +1995,8 @@
       "isQuantitativeReference": false,
       "unit": {
         "@type": "Unit",
-        "@id": "20aadc24-a391-41cf-b340-3e4529f44bde",
-        "name": "kg"
+        "@id": "e1317ffc-7f83-4a85-bc65-4fb229a25cf8",
+        "name": "g"
       }
     },
     {
@@ -2024,11 +2024,17 @@
       }
     }
   ],
-  "lastChange": "2025-12-19T12:00:00Z",
+  "lastChange": "2025-12-22T12:00:00Z",
+  "location": {
+    "@type": "Location",
+    "@id": "56bca136-90bb-3a77-9abb-7ce558af711e",
+    "category": "Global/Unlocated",
+    "name": "Global"
+  },
   "name": "Transport, chemical tanker; distillate powered; Asia to US West Coast",
   "processDocumentation": {
     "completenessDescription": "HAP speciation profiles from USEPA 2022 (see Appendix D) are applied to VOC and PM emission factors.",
-    "creationDate": "2025-12-19T12:00:00",
+    "creationDate": "2025-12-22T12:00:00",
     "dataCollectionDescription": "Data were modeled in 2025.",
     "dataDocumentor": {
       "@type": "Actor",
@@ -2042,7 +2048,8 @@
       "category": "Organisations",
       "name": "ERG"
     },
-    "dataTreatmentDescription": "Regional distances were calculated using averages distances for the routes using shipping lanes between the more visited ports based on the Entrance and Clearance data for 2023 (USACE 2023). The shipping lanes were from the Global Shipping Routes from ArcGIS which were originally generated from shipping lane vectors from the Map of the World Oceans. This analysis provided the typical transit distance and percentages in ECA zones.\nThe average vessel speeds for the typical vessels are used to calculate the transit time by dividing the distance by speed. The average speed is calculated based on the mode of transit speed ratios multiplied by the max speed (USEPA 2022).\nThe time for the port, maneuvering, and anchorage times also need to be estimated. The international port times were derived from data from median time spent in port by container ships worldwide in 2021, by country. The US dwell times were based on a US average from 2022 of 34.6 hours for container ships and 41 hours for tankers (BTS 2023). \nManeuvering time was estimated based on the distance a ship travels from the breakwater to the pier/wharf/dock (PWD). Average maneuvering speeds range between 3 to 8 knots. Outbound speeds are usually faster since the ship does not need to dock (Browning 2006). Because of this we assumed a speed of  3 inbound and 5.5 for the outbound speed. The distance was measured from the innermost point of the port to the coastline plus 0.5 miles for the breakwater. These distances were averaged by the US region and global regions. \nThe anchorage time was assumed to be 6.5% of the total transit time. This is based on averaging the average percentage time of anchorage from AIS tracking, which ranges from 4% to 9%.",
+    "dataSelectionDescription": "Representative routes were selected using shipping lanes between the most frequently visited ports based on the Entrance and Clearance data for 2023 (USACE 2023). Shipping lanes reflect the most efficient route between the origin and destination ports. The shipping lanes were from the Global Shipping Routes from ArcGIS which were originally generated from shipping lane vectors from the Map of the World Oceans. This analysis provided the typical transit distance and percentages in ECA zones.",
+    "dataTreatmentDescription": "The average vessel speeds for the typical vessels are used to calculate the transit time by dividing the distance by speed. The average speed is calculated based on the mode of transit speed ratios multiplied by the max speed (USEPA 2022).\nThe time for the port, maneuvering, and anchorage times also need to be estimated. The international port times were derived from data from median time spent in port by container ships worldwide in 2021, by country. The US dwell times were based on a US average from 2022 of 34.6 hours for container ships and 41 hours for tankers (BTS 2023). \nManeuvering time was estimated based on the distance a ship travels from the breakwater to the pier/wharf/dock (PWD). Average maneuvering speeds range between 3 to 8 knots. Outbound speeds are usually faster since the ship does not need to dock (Browning 2006). Because of this we assumed a speed of  3 inbound and 5.5 for the outbound speed. The distance was measured from the innermost point of the port to the coastline plus 0.5 miles for the breakwater. These distances were averaged by the US region and global regions. \nThe anchorage time was assumed to be 6.5% of the total transit time. This is based on averaging the average percentage time of anchorage from AIS tracking, which ranges from 4% to 9%.",
     "geographyDescription": "This process assumes an average emissions rate based on a route from Asia to US West Coast. The route is also used to estimate the portion of emissions that occur within an Emissions Control Area (ECA), where reduced emissions are required.  Note no location object is assigned as emissions are primarily occuring in  open waters.",
     "intendedApplication": "Situation C1 - Accounting, with system-external interactions - The intended application is a purely descriptive accounting / documentation of the analyzed system including existing interactions with other systems in the LCI model. The target audience of this model includes LCA practitioners, industry, and the general public. A full inventory of environmental flows are included; thus this unit process can be used for a full range of LCIA impact categories.",
     "inventoryMethodDescription": "Attributional process.",

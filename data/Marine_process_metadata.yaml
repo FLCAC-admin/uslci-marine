@@ -58,16 +58,16 @@ completeness_description: >
     HAP speciation profiles from USEPA 2022 (see Appendix D) are applied to VOC
     and PM emission factors.
 
-# data_selection_description: 
+data_selection_description: >
+    Representative routes were selected using shipping lanes between the most
+    frequently visited ports based on the Entrance and Clearance data for 2023
+    (USACE 2023). Shipping lanes reflect the most efficient route between the
+    origin and destination ports. The shipping lanes were from the Global
+    Shipping Routes from ArcGIS which were originally generated from shipping
+    lane vectors from the Map of the World Oceans. This analysis provided the
+    typical transit distance and percentages in ECA zones.
 
 data_treatment_description: >
-    Regional distances were calculated using averages distances for the routes
-    using shipping lanes between the more visited ports based on the Entrance
-    and Clearance data for [YEAR] (USACE 2023). The shipping lanes were from the
-    Global Shipping Routes from ArcGIS which were originally generated from shipping
-    lane vectors from the Map of the World Oceans. This analysis provided the typical
-    transit distance and percentages in ECA zones.
-
     The average vessel speeds for the typical vessels are used to calculate the
     transit time by dividing the distance by speed. The average speed is calculated
     based on the mode of transit speed ratios multiplied by the max speed (USEPA 2022).
@@ -104,8 +104,8 @@ use_advice: >
     The choice of route primarily impacts the share of the emissions that occur
     during transit relative to near-shore emissions during maneuvering, hotelling,
     and anchorage. These processes are generally applicable to outgoing transit
-    as well.
-    This process is intended to connect to fuel supply processes in the USLCI.
+    as well. This process is intended to connect to fuel supply processes in the
+    USLCI.
 
 reviews:
  1:

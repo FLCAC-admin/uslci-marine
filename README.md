@@ -14,4 +14,4 @@ Run [process_marine.py](process_marine.py)
 
 | Datasts              | Version | flcac-utils | Release        |
 |----------------------|---------|-------------|----------------|
-| Container and Tanker | v1.0.0  | v0.2.0      | 2025 Q4, USLCI |
+| Container and Tanker | v1.0.0  | v0.2.2      | 2025 Q4, USLCI |
